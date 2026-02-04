@@ -1,0 +1,280 @@
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #0a0a0a;
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+/* ==========================================================================
+   Header Block
+   ========================================================================== */
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 24px;
+	background-color: #1d293d;
+}
+
+.header__logo {
+	width: 40px;
+	height: 40px;
+	background-color: #2b7fff;
+	border-radius: 50%;
+}
+
+.header__nav {
+	/* Navigation container */
+}
+
+/* ==========================================================================
+   Nav List Block
+   ========================================================================== */
+
+.nav-list {
+	display: flex;
+	gap: 24px;
+}
+
+.nav-list--footer {
+	justify-content: center;
+}
+
+.nav-list__item {
+	/* List item */
+}
+
+.nav-list__link {
+	font-size: 16px;
+	line-height: 24px;
+	color: #fff;
+	transition: opacity 0.2s ease;
+}
+
+.nav-list__link:hover {
+	opacity: 0.8;
+}
+
+.nav-list__link--footer {
+	color: #4a5565;
+}
+
+/* ==========================================================================
+   Main Content
+   ========================================================================== */
+
+.main {
+	/* Main content wrapper */
+}
+
+/* ==========================================================================
+   Hero Block
+   ========================================================================== */
+
+.hero {
+	padding: 48px 16px;
+	text-align: center;
+}
+
+.hero__title {
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 48px;
+	color: #0a0a0a;
+	margin-bottom: 24px;
+}
+
+.hero__description {
+	font-size: 20px;
+	line-height: 28px;
+	color: #4a5565;
+	max-width: 595px;
+	margin: 0 auto 32px;
+}
+
+.hero__cta {
+	display: inline-block;
+	padding: 12px 32px;
+	background-color: #1d293d;
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+	border-radius: 4px;
+	transition: background-color 0.2s ease;
+}
+
+.hero__cta:hover {
+	background-color: #2a3a52;
+}
+
+/* ==========================================================================
+   Features Block
+   ========================================================================== */
+
+.features {
+	padding: 16px;
+}
+
+.features__title {
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 36px;
+	color: #0a0a0a;
+	text-align: center;
+	margin-bottom: 28px;
+}
+
+.features__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+	max-width: 1111px;
+	margin: 0 auto;
+}
+
+/* ==========================================================================
+   Feature Card Block
+   ========================================================================== */
+
+.feature-card {
+	padding: 25px;
+	border: 1px solid #d1d5dc;
+	border-radius: 4px;
+}
+
+.feature-card__title {
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 27px;
+	color: #0a0a0a;
+	margin-bottom: 12px;
+}
+
+.feature-card__description {
+	font-size: 16px;
+	line-height: 24px;
+	color: #4a5565;
+}
+
+/* ==========================================================================
+   Newsletter Block
+   ========================================================================== */
+
+.newsletter {
+	margin-top: 28px;
+	padding: 56px 16px;
+	background-color: #eff6ff;
+	text-align: center;
+}
+
+.newsletter__title {
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 36px;
+	color: #0a0a0a;
+	margin-bottom: 16px;
+}
+
+.newsletter__description {
+	font-size: 16px;
+	line-height: 24px;
+	color: #4a5565;
+	margin-bottom: 32px;
+}
+
+.newsletter__form {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	max-width: 448px;
+	margin: 0 auto;
+}
+
+.newsletter__input {
+	flex: 1;
+	padding: 12px 16px;
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #0a0a0a;
+	border: 1px solid #99a1af;
+	border-radius: 4px;
+	outline: none;
+	transition: border-color 0.2s ease;
+}
+
+.newsletter__input::placeholder {
+	color: rgba(10, 10, 10, 0.5);
+}
+
+.newsletter__input:focus {
+	border-color: #2b7fff;
+}
+
+.newsletter__button {
+	padding: 12px 24px;
+	background-color: #1d293d;
+	color: #fff;
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.newsletter__button:hover {
+	background-color: #2a3a52;
+}
+
+/* ==========================================================================
+   Footer Block
+   ========================================================================== */
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 12px 24px;
+	background-color: #d7d7d7;
+}
+
+.footer__nav {
+	/* Footer navigation */
+}
+
+.footer__copyright {
+	font-size: 16px;
+	line-height: 24px;
+	color: #4a5565;
+	text-align: center;
+}
