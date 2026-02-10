@@ -242,6 +242,113 @@ ul {
 }
 
 /* ==========================================================================
+   About Block
+   ========================================================================== */
+
+.about {
+	max-width: 672px;
+	margin: 0 auto;
+	padding: 64px 16px;
+}
+
+.about__title {
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 36px;
+	color: #0a0a0a;
+	margin-bottom: 32px;
+}
+
+.about__text {
+	font-size: 16px;
+	line-height: 24px;
+	color: #4a5565;
+	margin-bottom: 24px;
+}
+
+.about__text:first-of-type {
+	margin-bottom: 32px;
+}
+
+.about__image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 256px;
+	background-color: #d1d5dc;
+	border-radius: 4px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #6a7282;
+	margin-bottom: 32px;
+}
+
+.about__cta {
+	display: inline-block;
+	padding: 12px 24px;
+	background-color: #1d293d;
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+	border-radius: 4px;
+	transition: background-color 0.2s ease;
+}
+
+.about__cta:hover {
+	background-color: #2a3a52;
+}
+
+/* ==========================================================================
+   Services Block
+   ========================================================================== */
+
+.services {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 72px 24px 48px;
+}
+
+.services__title {
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 36px;
+	color: #0a0a0a;
+}
+
+.services__description {
+	font-size: 16px;
+	line-height: 24px;
+	color: #4a5565;
+	max-width: 768px;
+}
+
+.services__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+	max-width: 1095px;
+}
+
+.services__cta {
+	display: inline-block;
+	padding: 11px 23px;
+	background-color: #1d293d;
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+	border-radius: 4px;
+	align-self: flex-start;
+	transition: background-color 0.2s ease;
+}
+
+.services__cta:hover {
+	background-color: #2a3a52;
+}
+
+/* ==========================================================================
    Footer Block
    ========================================================================== */
 
