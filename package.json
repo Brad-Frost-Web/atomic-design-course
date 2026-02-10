@@ -1,0 +1,11 @@
+{
+	"name": "our-company",
+	"version": "1.0.0",
+	"description": "We are a company",
+	"dependencies": {
+		"lit": "^3.3.2"
+	},
+	"scripts": {
+		"start": "npx serve ."
+	}
+}
