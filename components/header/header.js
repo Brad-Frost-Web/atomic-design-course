@@ -11,13 +11,13 @@ class MyHeader extends LitElement {
 				<nav>
 					<ul class="header__nav-list">
 						<li>
-							<a href="#" class="header__link">Services</a>
+							<a href="/services.html" class="header__link">Services</a>
 						</li>
 						<li>
-							<a href="#" class="header__link">About</a>
+							<a href="/about.html" class="header__link">About</a>
 						</li>
 						<li>
-							<a href="#" class="header__link">Contact</a>
+							<a href="/contact.html" class="header__link">Contact</a>
 						</li>
 					</ul>
 				</nav>

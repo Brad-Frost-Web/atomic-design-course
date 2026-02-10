@@ -11,24 +11,18 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="styles.css" />
+		<script type="importmap">
+			{
+				"imports": {
+					"lit": "https://esm.sh/lit@3",
+					"lit/": "https://esm.sh/lit@3/"
+				}
+			}
+		</script>
+		<script type="module" src="components/header/header.js"></script>
 	</head>
 	<body>
-		<header class="header">
-			<div class="header__logo"></div>
-			<nav class="header__nav">
-				<ul class="nav-list">
-					<li class="nav-list__item">
-						<a href="#" class="nav-list__link">Services</a>
-					</li>
-					<li class="nav-list__item">
-						<a href="#" class="nav-list__link">About</a>
-					</li>
-					<li class="nav-list__item">
-						<a href="#" class="nav-list__link">Contact</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
+		<my-header></my-header>
 
 		<main class="about">
 			<h2 class="about__title">About Us</h2>
