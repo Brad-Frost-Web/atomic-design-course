@@ -20,84 +20,20 @@
 			}
 		</script>
 		<script type="module" src="components/header/header.js"></script>
+		<script type="module" src="components/hero/hero.js"></script>
+		<script type="module" src="components/features/features.js"></script>
+		<script type="module" src="components/newsletter/newsletter.js"></script>
+		<script type="module" src="components/footer/footer.js"></script>
 	</head>
 	<body>
 		<my-header></my-header>
 
 		<main class="main">
-			<section class="hero">
-				<h1 class="hero__title">Welcome to Our Company</h1>
-				<p class="hero__description">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-				<a href="#" class="hero__cta">Get Started</a>
-			</section>
-
-			<section class="features">
-				<h2 class="features__title">Why Choose Us</h2>
-				<div class="features__grid">
-					<article class="feature-card">
-						<h3 class="feature-card__title">Feature One</h3>
-						<p class="feature-card__description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-							eiusmod tempor incididunt.
-						</p>
-					</article>
-					<article class="feature-card">
-						<h3 class="feature-card__title">Feature Two</h3>
-						<p class="feature-card__description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-							eiusmod tempor incididunt.
-						</p>
-					</article>
-					<article class="feature-card">
-						<h3 class="feature-card__title">Feature Three</h3>
-						<p class="feature-card__description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-							eiusmod tempor incididunt.
-						</p>
-					</article>
-				</div>
-			</section>
-
-			<section class="newsletter">
-				<h2 class="newsletter__title">Stay Updated</h2>
-				<p class="newsletter__description">
-					Subscribe to our newsletter to receive the latest news and updates.
-				</p>
-				<form class="newsletter__form">
-					<input
-						type="email"
-						class="newsletter__input"
-						placeholder="Enter your email"
-					/>
-					<button type="submit" class="newsletter__button">Subscribe</button>
-				</form>
-			</section>
+			<my-hero></my-hero>
+			<my-features></my-features>
+			<my-newsletter></my-newsletter>
 		</main>
 
-		<footer class="footer">
-			<nav class="footer__nav">
-				<ul class="nav-list nav-list--footer">
-					<li class="nav-list__item">
-						<a href="#" class="nav-list__link nav-list__link--footer"
-							>Services</a
-						>
-					</li>
-					<li class="nav-list__item">
-						<a href="#" class="nav-list__link nav-list__link--footer">About</a>
-					</li>
-					<li class="nav-list__item">
-						<a href="#" class="nav-list__link nav-list__link--footer"
-							>Contact</a
-						>
-					</li>
-				</ul>
-			</nav>
-			<p class="footer__copyright">
-				&copy; 2026 My Company. All rights reserved.
-			</p>
-		</footer>
+		<my-footer></my-footer>
 	</body>
 </html>

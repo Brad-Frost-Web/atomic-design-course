@@ -1,0 +1,36 @@
+:host {
+	display: block;
+}
+
+.text-field {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.text-field__label {
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: #0a0a0a;
+}
+
+.text-field__input {
+	padding: 13px 12px;
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+	color: #0a0a0a;
+	background-color: #fff;
+	border: 1px solid #585d65;
+	border-radius: 4px;
+	outline: none;
+	transition: border-color 0.2s ease;
+}
+
+.text-field__input::placeholder {
+	color: #999;
+}
+
+.text-field__input:focus {
+	border-color: #2b7fff;
+}
