@@ -7,17 +7,17 @@ class MyHeader extends LitElement {
 	render() {
 		return html`
 			<header class="header">
-				<div class="header__logo"></div>
-				<nav>
-					<ul class="header__nav-list">
-						<li>
-							<a href="#" class="header__link">Services</a>
+				<div class="logo"></div>
+				<nav class="primary-nav">
+					<ul class="primary-nav__list">
+						<li class="primary-nav__item">
+							<a href="./services.html" class="primary-nav__link">Services</a>
 						</li>
-						<li>
-							<a href="#" class="header__link">About</a>
+						<li class="primary-nav__item">
+							<a href="./about.html" class="primary-nav__link">About</a>
 						</li>
-						<li>
-							<a href="#" class="header__link">Contact</a>
+						<li class="primary-nav__item">
+							<a href="./contact.html" class="primary-nav__link">Contact</a>
 						</li>
 					</ul>
 				</nav>
