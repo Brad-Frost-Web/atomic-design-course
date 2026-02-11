@@ -14,56 +14,54 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="header__logo"></div>
-			<nav class="header__nav">
-				<ul class="nav-list">
-					<li class="nav-list__item">
-						<a href="/services.html" class="nav-list__link">Services</a>
+			<div class="logo"></div>
+			<nav class="primary-nav">
+				<ul class="primary-nav__list">
+					<li class="primary-nav__item">
+						<a href="./services.html" class="primary-nav__link">Services</a>
 					</li>
-					<li class="nav-list__item">
-						<a href="/about.html" class="nav-list__link">About</a>
+					<li class="primary-nav__item">
+						<a href="./about.html" class="primary-nav__link">About</a>
 					</li>
-					<li class="nav-list__item">
-						<a href="/contact.html" class="nav-list__link">Contact</a>
+					<li class="primary-nav__item">
+						<a href="./contact.html" class="primary-nav__link">Contact</a>
 					</li>
 				</ul>
 			</nav>
 		</header>
 
-		<main class="contact">
-			<h2 class="contact__title">Contact us</h2>
-			<form class="contact__form">
-				<div class="contact__field">
-					<label class="contact__label" for="name">Name</label>
-					<input type="text" id="name" class="contact__input" />
-				</div>
-				<div class="contact__field">
-					<label class="contact__label" for="email">Email</label>
-					<input type="email" id="email" class="contact__input" />
-				</div>
-				<div class="contact__field">
-					<label class="contact__label" for="message">Your Message</label>
-					<textarea id="message" class="contact__textarea"></textarea>
-				</div>
-				<button type="submit" class="contact__button">Submit</button>
-			</form>
+		<main class="main">
+			<div class="layout-container layout-container--narrow">
+				<h2 class="heading heading--title">Contact us</h2>
+				<form class="contact__form">
+					<div class="text-field">
+						<label class="text-field__label" for="name">Name</label>
+						<input type="text" id="name" class="text-field__input" />
+					</div>
+					<div class="text-field">
+						<label class="text-field__label" for="email">Email</label>
+						<input type="email" id="email" class="text-field__input" />
+					</div>
+					<div class="text-field">
+						<label class="text-field__label" for="message">Your Message</label>
+						<textarea id="message" class="text-field__textarea"></textarea>
+					</div>
+					<button type="submit" class="button">Submit</button>
+				</form>
+			</div>
 		</main>
 
 		<footer class="footer">
-			<nav class="footer__nav">
-				<ul class="nav-list nav-list--footer">
-					<li class="nav-list__item">
-						<a href="#" class="nav-list__link nav-list__link--footer"
-							>Services</a
-						>
+			<nav class="footer-nav">
+				<ul class="footer-nav__list">
+					<li class="footer-nav__item">
+						<a href="./services.html" class="footer-nav__link">Services</a>
 					</li>
-					<li class="nav-list__item">
-						<a href="#" class="nav-list__link nav-list__link--footer">About</a>
+					<li class="footer-nav__item">
+						<a href="./about.html" class="footer-nav__link">About</a>
 					</li>
-					<li class="nav-list__item">
-						<a href="#" class="nav-list__link nav-list__link--footer"
-							>Contact</a
-						>
+					<li class="footer-nav__item">
+						<a href="./contact.html" class="footer-nav__link">Contact</a>
 					</li>
 				</ul>
 			</nav>

@@ -14,90 +14,97 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="header__logo"></div>
-			<nav class="header__nav">
-				<ul class="nav-list">
-					<li class="nav-list__item">
-						<a href="/services.html" class="nav-list__link">Services</a>
+			<div class="logo"></div>
+			<nav class="primary-nav">
+				<ul class="primary-nav__list">
+					<li class="primary-nav__item">
+						<a href="./services.html" class="primary-nav__link">Services</a>
 					</li>
-					<li class="nav-list__item">
-						<a href="/about.html" class="nav-list__link">About</a>
+					<li class="primary-nav__item">
+						<a href="./about.html" class="primary-nav__link">About</a>
 					</li>
-					<li class="nav-list__item">
-						<a href="/contact.html" class="nav-list__link">Contact</a>
+					<li class="primary-nav__item">
+						<a href="./contact.html" class="primary-nav__link">Contact</a>
 					</li>
 				</ul>
 			</nav>
 		</header>
 
 		<main class="main">
-			<section class="hero">
-				<h1 class="hero__title">Welcome to Our Company</h1>
-				<p class="hero__description">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-				<a href="#" class="hero__cta">Get Started</a>
-			</section>
+			<div class="layout-container">
+				<section class="hero">
+					<h1 class="heading heading--title-lg">Welcome to Our Company</h1>
+					<div class="text-passage text-passage--lg">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+					<a href="#" class="button">Get Started</a>
+				</section>
 
-			<section class="features">
-				<h2 class="features__title">Why Choose Us</h2>
-				<div class="features__grid">
-					<article class="feature-card">
-						<h3 class="feature-card__title">Feature One</h3>
-						<p class="feature-card__description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-							eiusmod tempor incididunt.
-						</p>
-					</article>
-					<article class="feature-card">
-						<h3 class="feature-card__title">Feature Two</h3>
-						<p class="feature-card__description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-							eiusmod tempor incididunt.
-						</p>
-					</article>
-					<article class="feature-card">
-						<h3 class="feature-card__title">Feature Three</h3>
-						<p class="feature-card__description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-							eiusmod tempor incididunt.
-						</p>
-					</article>
+				<section class="section">
+					<h2 class="heading heading--title section__heading">Why Choose Us</h2>
+					<div class="grid">
+						<article class="card">
+							<h3 class="heading heading--title-sm">Feature One</h3>
+							<div class="text-passage">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+								eiusmod tempor incididunt.
+							</div>
+						</article>
+						<article class="card">
+							<h3 class="heading heading--title-sm">Feature Two</h3>
+							<div class="text-passage">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+								eiusmod tempor incididunt.
+							</div>
+						</article>
+						<article class="card">
+							<h3 class="heading heading--title-sm">Feature Three</h3>
+							<div class="text-passage">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+								eiusmod tempor incididunt.
+							</div>
+						</article>
+					</div>
+				</section>
+			</div>
+
+			<div class="band">
+				<div class="layout-container">
+					<section class="section newsletter">
+						<h2 class="heading heading--title">Stay Updated</h2>
+						<div class="text-passage">
+							Subscribe to our newsletter to receive the latest news and
+							updates.
+						</div>
+						<form class="form">
+							<div class="text-field form__text-field">
+								<input
+									type="email"
+									class="text-field__input"
+									placeholder="Enter your email"
+								/>
+							</div>
+							<button type="submit" class="button">Subscribe</button>
+						</form>
+					</section>
 				</div>
-			</section>
-
-			<section class="newsletter">
-				<h2 class="newsletter__title">Stay Updated</h2>
-				<p class="newsletter__description">
-					Subscribe to our newsletter to receive the latest news and updates.
-				</p>
-				<form class="newsletter__form">
-					<input
-						type="email"
-						class="newsletter__input"
-						placeholder="Enter your email"
-					/>
-					<button type="submit" class="newsletter__button">Subscribe</button>
-				</form>
-			</section>
+			</div>
 		</main>
 
 		<footer class="footer">
-			<nav class="footer__nav">
-				<ul class="nav-list nav-list--footer">
-					<li class="nav-list__item">
-						<a href="#" class="nav-list__link nav-list__link--footer"
-							>Services</a
-						>
+			<nav class="footer-nav">
+				<ul class="footer-nav__list">
+					<li class="footer-nav__item">
+						<a href="./services.html" class="footer-nav__link">Services</a>
 					</li>
-					<li class="nav-list__item">
-						<a href="#" class="nav-list__link nav-list__link--footer">About</a>
+					<li class="footer-nav__item">
+						<a href="./about.html" class="footer-nav__link">About</a>
 					</li>
-					<li class="nav-list__item">
-						<a href="#" class="nav-list__link nav-list__link--footer"
-							>Contact</a
-						>
+					<li class="footer-nav__item">
+						<a href="./contact.html" class="footer-nav__link">Contact</a>
 					</li>
 				</ul>
 			</nav>
