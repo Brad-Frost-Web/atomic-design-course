@@ -403,6 +403,10 @@ ul {
    Utility classes
    ========================================================================== */
 
+.u-margin-bottom-72 {
+	margin-block-end: 72px;
+}
+
 .u-margin-bottom-64 {
 	margin-block-end: 64px;
 }
