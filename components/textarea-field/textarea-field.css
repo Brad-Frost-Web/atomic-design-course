@@ -1,0 +1,38 @@
+:host {
+	display: block;
+}
+
+.textarea-field {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.textarea-field__label {
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: #0a0a0a;
+}
+
+.textarea-field__textarea {
+	height: 162px;
+	padding: 8px 12px;
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+	color: #0a0a0a;
+	background-color: #fff;
+	border: 1px solid #585d65;
+	border-radius: 4px;
+	outline: none;
+	resize: vertical;
+	transition: border-color 0.2s ease;
+}
+
+.textarea-field__textarea::placeholder {
+	color: #999;
+}
+
+.textarea-field__textarea:focus {
+	border-color: #2b7fff;
+}

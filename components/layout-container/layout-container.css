@@ -1,0 +1,13 @@
+:host {
+	display: block;
+}
+
+.layout-container {
+	margin: 0 auto;
+	padding: 0 16px;
+	max-width: 1111px;
+}
+
+.layout-container--narrow {
+	max-width: 672px;
+}
