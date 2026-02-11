@@ -10,14 +10,14 @@
 	background-color: #1d293d;
 }
 
-.header__logo {
+.logo {
 	width: 40px;
 	height: 40px;
 	background-color: #2b7fff;
 	border-radius: 50%;
 }
 
-.header__nav-list {
+.primary-nav__list {
 	display: flex;
 	gap: 24px;
 	list-style: none;
@@ -25,7 +25,7 @@
 	padding: 0;
 }
 
-.header__link {
+.primary-nav__link {
 	font-family: "Inter", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
@@ -34,6 +34,6 @@
 	transition: opacity 0.2s ease;
 }
 
-.header__link:hover {
+.primary-nav__link:hover {
 	opacity: 0.8;
 }
