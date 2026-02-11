@@ -330,73 +330,16 @@ ul {
 
 .form {
 	display: flex;
-	justify-content: center;
-	gap: 16px;
-	max-width: 448px;
-	margin: 0 auto;
+	flex-direction: column;
+	gap: 24px;
 }
 
 .form__text-field {
 	flex: 1;
 }
 
-/* ==========================================================================
-   About Layout
-   ========================================================================== */
-
-.about {
-	display: flex;
-	flex-direction: column;
-	gap: 72px;
-}
-
-.about > .heading {
-	margin-block-end: 32px;
-}
-
-.about > .text-passage {
-	margin-block-end: 24px;
-}
-
-.about > .text-passage:first-of-type {
-	margin-block-end: 32px;
-}
-
-.about > .image-placeholder {
-	margin-block-end: 32px;
-}
-
-/* ==========================================================================
-   Services Layout
-   ========================================================================== */
-
-.services {
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-	padding: 72px 24px 48px;
-}
-
-.services > .card-grid {
-	max-width: 1095px;
-}
-
-/* ==========================================================================
-   Contact Layout
-   ========================================================================== */
-
-.contact {
-	display: flex;
-	flex-direction: column;
-	gap: 32px;
-
-	padding: 64px 16px;
-}
-
-.contact__form {
-	display: flex;
-	flex-direction: column;
-	gap: 24px;
+.form__button {
+	align-self: flex-start;
 }
 
 /* ==========================================================================
