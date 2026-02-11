@@ -6,7 +6,7 @@ class MyHeader extends LitElement {
 
 	render() {
 		return html`
-			<header class="header u-margin-bottom-72">
+			<header class="header">
 				<div class="logo"></div>
 				<nav class="primary-nav">
 					<ul class="primary-nav__list">
