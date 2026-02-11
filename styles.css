@@ -316,17 +316,9 @@ ul {
 	background: #eff6ff;
 }
 
-.newsletter {
-	text-align: center;
-}
-
-.newsletter > .heading {
-	margin-block-end: 16px;
-}
-
-.newsletter > .text-passage {
-	margin-block-end: 32px;
-}
+/* ==========================================================================
+   Form
+   ========================================================================== */
 
 .form {
 	display: flex;
@@ -342,6 +334,19 @@ ul {
 	align-self: flex-start;
 }
 
+/* ==========================================================================
+   Newsletter Form
+   ========================================================================== */
+.newsletter-form {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+
+.newsletter-form__text-field {
+	max-width: 302px;
+	width: 100%;
+}
 /* ==========================================================================
    Utility classes
    ========================================================================== */
