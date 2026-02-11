@@ -28,202 +28,59 @@ ul {
 }
 
 /* ==========================================================================
-   Header Block
+   Heading Block
    ========================================================================== */
 
-.header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 24px;
-	background-color: #1d293d;
+.heading {
+	font-family: "Space Grotesk", sans-serif;
+	font-weight: 500;
+	color: #0a0a0a;
 }
 
-.header__logo {
-	width: 40px;
-	height: 40px;
-	background-color: #2b7fff;
-	border-radius: 50%;
+.heading--title-lg {
+	font-size: 48px;
+	line-height: 48px;
+}
+
+.heading--title {
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.heading--title-sm {
+	font-size: 18px;
+	line-height: 27px;
 }
 
 /* ==========================================================================
-   Nav List Block
+   Text Passage Block
    ========================================================================== */
 
-.nav-list {
-	display: flex;
-	gap: 24px;
-}
-
-.nav-list--footer {
-	justify-content: center;
-}
-
-.nav-list__link {
+.text-passage {
 	font-size: 16px;
 	line-height: 24px;
-	color: #fff;
-	transition: opacity 0.2s ease;
-}
-
-.nav-list__link:hover {
-	opacity: 0.8;
-}
-
-.nav-list__link--footer {
 	color: #4a5565;
+
+	p {
+		margin-block-end: 32px;
+	}
+
+	:last-child {
+		margin-block-end: 0;
+	}
 }
 
-/* ==========================================================================
-   Hero Block
-   ========================================================================== */
-
-.hero {
-	padding: 48px 16px;
-	text-align: center;
-}
-
-.hero__title {
-	font-family: "Space Grotesk", sans-serif;
-	font-size: 48px;
-	font-weight: 500;
-	line-height: 48px;
-	color: #0a0a0a;
-	margin-bottom: 24px;
-}
-
-.hero__description {
+.text-passage--lg {
 	font-size: 20px;
 	line-height: 28px;
-	color: #4a5565;
-	max-width: 672px;
-	margin: 0 auto 32px;
 }
 
-.hero__cta {
+/* ==========================================================================
+   Button Block
+   ========================================================================== */
+
+.button {
 	display: inline-block;
-	padding: 12px 32px;
-	background-color: #1d293d;
-	color: #fff;
-	font-size: 16px;
-	line-height: 24px;
-	border-radius: 4px;
-	transition: background-color 0.2s ease;
-}
-
-.hero__cta:hover {
-	background-color: #2a3a52;
-}
-
-/* ==========================================================================
-   Features Block
-   ========================================================================== */
-
-.features {
-	padding: 16px;
-}
-
-.features__title {
-	font-family: "Space Grotesk", sans-serif;
-	font-size: 30px;
-	font-weight: 500;
-	line-height: 36px;
-	color: #0a0a0a;
-	text-align: center;
-	margin-bottom: 28px;
-}
-
-.features__grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 24px;
-	max-width: 1111px;
-	margin: 0 auto;
-}
-
-/* ==========================================================================
-   Feature Card Block
-   ========================================================================== */
-
-.feature-card {
-	padding: 25px;
-	border: 1px solid #d1d5dc;
-	border-radius: 4px;
-}
-
-.feature-card__title {
-	font-family: "Space Grotesk", sans-serif;
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 27px;
-	color: #0a0a0a;
-	margin-bottom: 12px;
-}
-
-.feature-card__description {
-	font-size: 16px;
-	line-height: 24px;
-	color: #4a5565;
-}
-
-/* ==========================================================================
-   Newsletter Block
-   ========================================================================== */
-
-.newsletter {
-	margin-top: 28px;
-	padding: 56px 16px;
-	background-color: #eff6ff;
-	text-align: center;
-}
-
-.newsletter__title {
-	font-family: "Space Grotesk", sans-serif;
-	font-size: 30px;
-	font-weight: 500;
-	line-height: 36px;
-	color: #0a0a0a;
-	margin-bottom: 16px;
-}
-
-.newsletter__description {
-	font-size: 16px;
-	line-height: 24px;
-	color: #4a5565;
-	margin-bottom: 32px;
-}
-
-.newsletter__form {
-	display: flex;
-	justify-content: center;
-	gap: 16px;
-	max-width: 448px;
-	margin: 0 auto;
-}
-
-.newsletter__input {
-	flex: 1;
-	padding: 12px 16px;
-	font-family: "Inter", sans-serif;
-	font-size: 16px;
-	line-height: 24px;
-	color: #0a0a0a;
-	border: 1px solid #99a1af;
-	background: transparent;
-	border-radius: 4px;
-	outline: none;
-	transition: border-color 0.2s ease;
-}
-
-.newsletter__input::placeholder {
-	color: rgba(10, 10, 10, 0.5);
-}
-
-.newsletter__input:focus {
-	border-color: #2b7fff;
-}
-
-.newsletter__button {
 	padding: 12px 24px;
 	background-color: #1d293d;
 	color: #fff;
@@ -237,8 +94,141 @@ ul {
 	transition: background-color 0.2s ease;
 }
 
-.newsletter__button:hover {
+.button:hover {
 	background-color: #2a3a52;
+}
+
+/* ==========================================================================
+   Text Field Block
+   ========================================================================== */
+
+.text-field {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.text-field__label {
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	color: #0a0a0a;
+}
+
+.text-field__input {
+	padding: 16px 16px;
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+	color: #0a0a0a;
+	border: 1px solid #585d65;
+	background-color: #fff;
+	border-radius: 4px;
+	outline: none;
+	transition: border-color 0.2s ease;
+}
+
+.text-field__input:focus {
+	border-color: #2b7fff;
+}
+
+.text-field__input::placeholder {
+	color: rgba(10, 10, 10, 0.5);
+}
+
+.text-field__textarea {
+	height: 162px;
+	padding: 8px 12px;
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+	color: #0a0a0a;
+	border: 1px solid #585d65;
+	border-radius: 4px;
+	outline: none;
+	resize: vertical;
+	transition: border-color 0.2s ease;
+}
+
+.text-field__textarea:focus {
+	border-color: #2b7fff;
+}
+
+/* ==========================================================================
+   Card
+   ========================================================================== */
+
+.card {
+	display: flex;
+	flex-direction: column;
+	padding: 24px;
+	gap: 16px;
+	border: 1px solid #d1d5dc;
+	border-radius: 4px;
+}
+
+/* ==========================================================================
+   Card Grid Block
+   ========================================================================== */
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+}
+
+/* ==========================================================================
+   Image Placeholder Block
+   ========================================================================== */
+
+.image-placeholder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 256px;
+	background-color: #d1d5dc;
+	border-radius: 4px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #6a7282;
+}
+
+/* ==========================================================================
+   Header Block
+   ========================================================================== */
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 24px;
+	background-color: #1d293d;
+}
+
+.logo {
+	width: 40px;
+	height: 40px;
+	background-color: #2b7fff;
+	border-radius: 50%;
+}
+
+/* ==========================================================================
+   Nav List Block
+   ========================================================================== */
+
+.primary-nav__list {
+	display: flex;
+	gap: 24px;
+}
+
+.primary-nav__link {
+	font-size: 16px;
+	line-height: 24px;
+	color: #fff;
+	transition: opacity 0.2s ease;
+}
+
+.primary-nav__link:hover {
+	opacity: 0.8;
 }
 
 /* ==========================================================================
@@ -258,4 +248,141 @@ ul {
 	line-height: 24px;
 	color: #4a5565;
 	text-align: center;
+}
+
+/* ==========================================================================
+   Footer Nav
+   ========================================================================== */
+
+.footer-nav__list {
+	display: flex;
+	gap: 24px;
+	justify-content: center;
+}
+
+.footer-nav__link {
+	color: #4a5565;
+}
+
+/* ==========================================================================
+   Hero Layout
+   ========================================================================== */
+
+.hero {
+	text-align: center;
+}
+
+.hero__heading {
+	margin-block-end: 24px;
+}
+
+.hero__description {
+	max-width: 672px;
+	margin: 0 auto 32px;
+}
+
+/* ==========================================================================
+   Layout Container
+   ========================================================================== */
+
+.layout-container {
+	margin: 0 auto;
+	padding: 0 24px;
+	max-width: 1143px;
+}
+
+.layout-container--narrow {
+	max-width: 672px;
+}
+
+/* ==========================================================================
+   Section
+   ========================================================================== */
+
+.section {
+	text-align: center;
+}
+
+.section__heading {
+	margin-block-end: 28px;
+}
+
+/* ==========================================================================
+   Newsletter Layout
+   ========================================================================== */
+
+.band {
+	padding: 56px 0;
+	background: #eff6ff;
+}
+
+/* ==========================================================================
+   Form
+   ========================================================================== */
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.form__text-field {
+	flex: 1;
+}
+
+.form__button {
+	align-self: flex-start;
+}
+
+/* ==========================================================================
+   Newsletter Form
+   ========================================================================== */
+.newsletter-form {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+
+.newsletter-form__text-field {
+	max-width: 302px;
+	width: 100%;
+}
+/* ==========================================================================
+   Utility classes
+   ========================================================================== */
+
+.u-margin-bottom-72 {
+	margin-block-end: 72px;
+}
+
+.u-margin-bottom-64 {
+	margin-block-end: 64px;
+}
+
+.u-margin-bottom-48 {
+	margin-block-end: 48px;
+}
+
+.u-margin-bottom-32 {
+	margin-block-end: 32px;
+}
+
+.u-margin-bottom-28 {
+	margin-block-end: 28px;
+}
+
+.u-margin-bottom-24 {
+	margin-block-end: 24px;
+}
+
+.u-margin-bottom-18 {
+	margin-block-end: 18px;
+}
+
+.u-margin-bottom-16 {
+	margin-block-end: 16px;
+}
+
+.u-margin-bottom-8 {
+	margin-block-end: 8px;
 }

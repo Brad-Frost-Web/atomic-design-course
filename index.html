@@ -26,12 +26,74 @@
 		<script type="module" src="components/footer/footer.js"></script>
 	</head>
 	<body>
-		<my-header></my-header>
+		<my-header class="u-margin-bottom-48"></my-header>
 
 		<main class="main">
-			<my-hero></my-hero>
-			<my-features></my-features>
-			<my-newsletter></my-newsletter>
+			<div class="layout-container">
+				<section class="hero u-margin-bottom-64">
+					<h1 class="heading heading--title-lg hero__heading">
+						Welcome to Our Company
+					</h1>
+					<div class="text-passage text-passage--lg hero__description">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+					<a href="#" class="button">Get Started</a>
+				</section>
+
+				<section class="section u-margin-bottom-18">
+					<h2 class="heading heading--title section__heading">Why Choose Us</h2>
+					<div class="grid">
+						<article class="card">
+							<h3 class="heading heading--title-sm">Feature One</h3>
+							<div class="text-passage">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+								eiusmod tempor incididunt.
+							</div>
+						</article>
+						<article class="card">
+							<h3 class="heading heading--title-sm">Feature Two</h3>
+							<div class="text-passage">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+								eiusmod tempor incididunt.
+							</div>
+						</article>
+						<article class="card">
+							<h3 class="heading heading--title-sm">Feature Three</h3>
+							<div class="text-passage">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+								eiusmod tempor incididunt.
+							</div>
+						</article>
+					</div>
+				</section>
+			</div>
+
+			<div class="band">
+				<div class="layout-container">
+					<section class="section">
+						<h2 class="heading heading--titl u-margin-bottom-16">
+							Stay Updated
+						</h2>
+						<div class="text-passage u-margin-bottom-32">
+							Subscribe to our newsletter to receive the latest news and
+							updates.
+						</div>
+						<form class="newsletter-form">
+							<div class="text-field newsletter-form__text-field">
+								<input
+									type="email"
+									class="text-field__input newsletter-form__text-field"
+									placeholder="Enter your email"
+								/>
+							</div>
+							<button type="submit" class="button">Subscribe</button>
+						</form>
+					</section>
+				</div>
+			</div>
 		</main>
 
 		<my-footer></my-footer>

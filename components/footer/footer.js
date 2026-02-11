@@ -7,16 +7,16 @@ class MyFooter extends LitElement {
 	render() {
 		return html`
 			<footer class="footer">
-				<nav>
-					<ul class="footer__nav-list">
-						<li>
-							<a href="#" class="footer__link">Services</a>
+				<nav class="footer-nav">
+					<ul class="footer-nav__list">
+						<li class="footer-nav__item">
+							<a href="./services.html" class="footer-nav__link">Services</a>
 						</li>
-						<li>
-							<a href="#" class="footer__link">About</a>
+						<li class="footer-nav__item">
+							<a href="./about.html" class="footer-nav__link">About</a>
 						</li>
-						<li>
-							<a href="#" class="footer__link">Contact</a>
+						<li class="footer-nav__item">
+							<a href="./contact.html" class="footer-nav__link">Contact</a>
 						</li>
 					</ul>
 				</nav>
