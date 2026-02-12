@@ -5,7 +5,7 @@ class MyTextPassage extends LitElement {
 	static styles = [styles];
 
 	render() {
-		return html`<p class="text-passage"><slot></slot></p>`;
+		return html`<div class="text-passage"><slot></slot></div>`;
 	}
 }
 
