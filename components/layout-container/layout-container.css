@@ -1,11 +1,12 @@
-:host {
-	display: block;
-}
+/* ==========================================================================
+   Layout Container
+   → components/layout-container/layout-container.css
+   ========================================================================== */
 
 .layout-container {
 	margin: 0 auto;
-	padding: 0 16px;
-	max-width: 1111px;
+	padding: 0 24px;
+	max-width: 1143px;
 }
 
 .layout-container--narrow {

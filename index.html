@@ -11,6 +11,17 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="components/heading/heading.css" />
+		<link rel="stylesheet" href="components/text-passage/text-passage.css" />
+		<link rel="stylesheet" href="components/button/button.css" />
+		<link rel="stylesheet" href="components/card/card.css" />
+		<link rel="stylesheet" href="components/grid/grid.css" />
+		<link rel="stylesheet" href="components/text-field/text-field.css" />
+		<link rel="stylesheet" href="components/band/band.css" />
+		<link
+			rel="stylesheet"
+			href="components/layout-container/layout-container.css"
+		/>
 		<script type="importmap">
 			{
 				"imports": {
@@ -20,21 +31,18 @@
 			}
 		</script>
 		<script type="module" src="components/header/header.js"></script>
-		<script type="module" src="components/hero/hero.js"></script>
-		<script type="module" src="components/features/features.js"></script>
-		<script type="module" src="components/newsletter/newsletter.js"></script>
 		<script type="module" src="components/footer/footer.js"></script>
 	</head>
 	<body>
-		<my-header class="u-margin-bottom-48"></my-header>
+		<my-header></my-header>
 
-		<main class="main">
-			<div class="layout-container">
+		<main>
+			<div class="layout-container layout-container--narrow">
 				<section class="hero u-margin-bottom-64">
-					<h1 class="heading heading--title-lg hero__heading">
+					<h1 class="heading heading--title-lg u-margin-bottom-24">
 						Welcome to Our Company
 					</h1>
-					<div class="text-passage text-passage--lg hero__description">
+					<div class="text-passage text-passage--lg u-margin-bottom-32">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
 							eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -42,8 +50,10 @@
 					</div>
 					<a href="#" class="button">Get Started</a>
 				</section>
+			</div>
 
-				<section class="section u-margin-bottom-18">
+			<div class="layout-container">
+				<section class="section u-margin-bottom-28">
 					<h2 class="heading heading--title section__heading">Why Choose Us</h2>
 					<div class="grid">
 						<article class="card">
@@ -72,9 +82,9 @@
 			</div>
 
 			<div class="band">
-				<div class="layout-container">
+				<div class="layout-container layout-container--narrow">
 					<section class="section">
-						<h2 class="heading heading--titl u-margin-bottom-16">
+						<h2 class="heading heading--title u-margin-bottom-16">
 							Stay Updated
 						</h2>
 						<div class="text-passage u-margin-bottom-32">
@@ -85,7 +95,7 @@
 							<div class="text-field newsletter-form__text-field">
 								<input
 									type="email"
-									class="text-field__input newsletter-form__text-field"
+									class="text-field__input"
 									placeholder="Enter your email"
 								/>
 							</div>

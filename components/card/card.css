@@ -1,13 +1,13 @@
-:host {
-	display: block;
-}
+/* ==========================================================================
+   Card
+   → components/card/card.css
+   ========================================================================== */
 
 .card {
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
 	padding: 24px;
-	background-color: #fff;
-	border: 1px solid #d1d6db;
+	gap: 16px;
+	border: 1px solid #d1d5dc;
 	border-radius: 4px;
 }

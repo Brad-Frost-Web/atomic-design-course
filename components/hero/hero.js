@@ -7,12 +7,16 @@ class MyHero extends LitElement {
 	render() {
 		return html`
 			<section class="hero">
-				<h1 class="hero__title">Welcome to Our Company</h1>
-				<p class="hero__description">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-				<a href="#" class="hero__cta">Get Started</a>
+				<h1 class="heading heading--title-lg hero__heading">
+					Welcome to Our Company
+				</h1>
+				<div class="text-passage text-passage--lg hero__description">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+				</div>
+				<a href="#" class="button">Get Started</a>
 			</section>
 		`;
 	}

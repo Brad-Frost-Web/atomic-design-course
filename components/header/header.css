@@ -1,6 +1,7 @@
-:host {
-	display: block;
-}
+/* ==========================================================================
+   Header Block
+   → components/header/header.css (header + nav list)
+   ========================================================================== */
 
 .header {
 	display: flex;
@@ -20,17 +21,12 @@
 .primary-nav__list {
 	display: flex;
 	gap: 24px;
-	list-style: none;
-	margin: 0;
-	padding: 0;
 }
 
 .primary-nav__link {
-	font-family: "Inter", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	color: #fff;
-	text-decoration: none;
 	transition: opacity 0.2s ease;
 }
 

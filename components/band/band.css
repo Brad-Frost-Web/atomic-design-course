@@ -1,8 +1,9 @@
-:host {
-	display: block;
-}
+/* ==========================================================================
+   Band
+   → components/band/band.css
+   ========================================================================== */
 
 .band {
-	padding: 56px 16px;
-	text-align: center;
+	padding: 56px 0;
+	background: #eff6ff;
 }
