@@ -1,8 +1,14 @@
 /* ==========================================================================
    Text Field Block
-   → components/text-field/text-field.css (input)
-   → components/textarea-field/textarea-field.css (textarea)
    ========================================================================== */
+:host {
+	display: block;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 
 .text-field {
 	display: flex;
@@ -19,7 +25,7 @@
 }
 
 .text-field__input {
-	padding: 16px 16px;
+	padding: 12px 16px;
 	font-family: "Inter", sans-serif;
 	font-size: 16px;
 	color: #0a0a0a;

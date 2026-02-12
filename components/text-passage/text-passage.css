@@ -1,7 +1,14 @@
 /* ==========================================================================
    Text Passage Block
-   → components/text-passage/text-passage.css
    ========================================================================== */
+:host {
+	display: block;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 .text-passage {
 	font-size: 16px;
 	line-height: 24px;

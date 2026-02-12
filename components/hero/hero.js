@@ -1,5 +1,8 @@
 import { LitElement, html } from "lit";
 import styles from "./hero.css" with { type: "css" };
+import "../heading/heading.js";
+import "../text-passage/text-passage.js";
+import "../button/button.js";
 
 class MyHero extends LitElement {
 	static styles = [styles];
@@ -7,16 +10,16 @@ class MyHero extends LitElement {
 	render() {
 		return html`
 			<section class="hero">
-				<h1 class="heading heading--title-lg hero__heading">
+				<my-heading variant="title-lg" tagName="h1" class="hero__heading">
 					Welcome to Our Company
-				</h1>
-				<div class="text-passage text-passage--lg hero__description">
+				</my-heading>
+				<my-text-passage class="hero__description">
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					</p>
-				</div>
-				<a href="#" class="button">Get Started</a>
+				</my-text-passage>
+				<my-button>Get Started</my-button>
 			</section>
 		`;
 	}

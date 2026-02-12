@@ -1,7 +1,16 @@
 /* ==========================================================================
    Hero Layout
-   → components/hero/hero.css
    ========================================================================== */
+
+:host {
+	display: block;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 
 .hero {
 	text-align: center;
@@ -12,6 +21,7 @@
 }
 
 .hero__description {
+	display: block;
 	max-width: 672px;
 	margin: 0 auto 32px;
 }

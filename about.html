@@ -10,40 +10,45 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500&display=swap"
 			rel="stylesheet"
 		/>
+		<script type="importmap">
+			{
+				"imports": {
+					"lit": "https://esm.sh/lit@3",
+					"lit/": "https://esm.sh/lit@3/"
+				}
+			}
+		</script>
+		<script type="module" src="components/header/header.js"></script>
+		<script
+			type="module"
+			src="components/layout-container/layout-container.js"
+		></script>
+		<script type="module" src="components/page-header/page-header.js"></script>
+		<script
+			type="module"
+			src="components/text-passage/text-passage.js"
+		></script>
+		<script type="module" src="components/button/button.js"></script>
+		<script type="module" src="components/footer/footer.js"></script>
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<header class="header u-margin-bottom-64">
-			<div class="logo"></div>
-			<nav class="primary-nav">
-				<ul class="primary-nav__list">
-					<li class="primary-nav__item">
-						<a href="./services.html" class="primary-nav__link">Services</a>
-					</li>
-					<li class="primary-nav__item">
-						<a href="./about.html" class="primary-nav__link">About</a>
-					</li>
-					<li class="primary-nav__item">
-						<a href="./contact.html" class="primary-nav__link">Contact</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
+		<my-header class="u-margin-bottom-24"></my-header>
 
 		<main class="main u-margin-bottom-64">
-			<div class="layout-container layout-container--narrow">
-				<h2 class="heading heading--title u-margin-bottom-32">About Us</h2>
-				<div class="text-passage u-margin-bottom-32">
+			<my-layout-container variant="narrow">
+				<my-page-header heading="About Us"></my-page-header>
+				<my-text-passage class="u-margin-bottom-32">
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 						ad minim veniam, quis nostrud exercitation ullamco laboris.
 					</p>
-				</div>
+				</my-text-passage>
 				<div class="image-placeholder u-margin-bottom-32">
 					Image Placeholder
 				</div>
-				<div class="text-passage u-margin-bottom-32">
+				<my-text-passage class="u-margin-bottom-32">
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -56,28 +61,11 @@
 						cupidatat non proident, sunt in culpa qui officia deserunt mollit
 						anim id est laborum.
 					</p>
-				</div>
-				<a href="#" class="button">Learn more about our services</a>
-			</div>
+				</my-text-passage>
+				<my-button>Learn more about our services</my-button>
+			</my-layout-container>
 		</main>
 
-		<footer class="footer">
-			<nav class="footer-nav">
-				<ul class="footer-nav__list">
-					<li class="footer-nav__item">
-						<a href="./services.html" class="footer-nav__link">Services</a>
-					</li>
-					<li class="footer-nav__item">
-						<a href="./about.html" class="footer-nav__link">About</a>
-					</li>
-					<li class="footer-nav__item">
-						<a href="./contact.html" class="footer-nav__link">Contact</a>
-					</li>
-				</ul>
-			</nav>
-			<p class="footer__copyright">
-				&copy; 2026 My Company. All rights reserved.
-			</p>
-		</footer>
+		<my-footer></my-footer>
 	</body>
 </html>

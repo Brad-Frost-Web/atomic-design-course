@@ -1,7 +1,14 @@
 /* ==========================================================================
    Card
-   → components/card/card.css
    ========================================================================== */
+:host {
+	display: block;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 
 .card {
 	display: flex;
@@ -10,4 +17,5 @@
 	gap: 16px;
 	border: 1px solid #d1d5dc;
 	border-radius: 4px;
+	text-align: left;
 }

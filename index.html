@@ -11,17 +11,6 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="styles.css" />
-		<link rel="stylesheet" href="components/heading/heading.css" />
-		<link rel="stylesheet" href="components/text-passage/text-passage.css" />
-		<link rel="stylesheet" href="components/button/button.css" />
-		<link rel="stylesheet" href="components/card/card.css" />
-		<link rel="stylesheet" href="components/grid/grid.css" />
-		<link rel="stylesheet" href="components/text-field/text-field.css" />
-		<link rel="stylesheet" href="components/band/band.css" />
-		<link
-			rel="stylesheet"
-			href="components/layout-container/layout-container.css"
-		/>
 		<script type="importmap">
 			{
 				"imports": {
@@ -31,79 +20,72 @@
 			}
 		</script>
 		<script type="module" src="components/header/header.js"></script>
+		<script type="module" src="components/hero/hero.js"></script>
+		<script type="module" src="components/features/features.js"></script>
+		<script type="module" src="components/band/band.js"></script>
+		<script
+			type="module"
+			src="components/layout-container/layout-container.js"
+		></script>
+		<script type="module" src="components/heading/heading.js"></script>
+		<script
+			type="module"
+			src="components/text-passage/text-passage.js"
+		></script>
+		<script type="module" src="components/text-field/text-field.js"></script>
+		<script type="module" src="components/button/button.js"></script>
+		<script type="module" src="components/card/card.js"></script>
+		<script type="module" src="components/grid/grid.js"></script>
 		<script type="module" src="components/footer/footer.js"></script>
 	</head>
 	<body>
-		<my-header></my-header>
+		<my-header class="u-margin-bottom-48"></my-header>
 
-		<main>
-			<div class="layout-container layout-container--narrow">
-				<section class="hero u-margin-bottom-64">
-					<h1 class="heading heading--title-lg u-margin-bottom-24">
-						Welcome to Our Company
-					</h1>
-					<div class="text-passage text-passage--lg u-margin-bottom-32">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</p>
-					</div>
-					<a href="#" class="button">Get Started</a>
+		<main class="main">
+			<my-layout-container>
+				<my-hero class="u-margin-bottom-64"></my-hero>
+				<section class="section u-margin-bottom-18">
+					<my-heading tag-name="h2" variant="title" class="section__heading">
+						Why Choose Us
+					</my-heading>
+					<my-grid>
+						<my-card
+							heading="Feature One"
+							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt."
+						></my-card>
+						<my-card
+							heading="Feature Two"
+							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt."
+						></my-card>
+						<my-card
+							heading="Feature Three"
+							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt."
+						></my-card>
+					</my-grid>
 				</section>
-			</div>
+			</my-layout-container>
 
-			<div class="layout-container">
-				<section class="section u-margin-bottom-28">
-					<h2 class="heading heading--title section__heading">Why Choose Us</h2>
-					<div class="grid">
-						<article class="card">
-							<h3 class="heading heading--title-sm">Feature One</h3>
-							<div class="text-passage">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-								eiusmod tempor incididunt.
-							</div>
-						</article>
-						<article class="card">
-							<h3 class="heading heading--title-sm">Feature Two</h3>
-							<div class="text-passage">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-								eiusmod tempor incididunt.
-							</div>
-						</article>
-						<article class="card">
-							<h3 class="heading heading--title-sm">Feature Three</h3>
-							<div class="text-passage">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-								eiusmod tempor incididunt.
-							</div>
-						</article>
-					</div>
-				</section>
-			</div>
-
-			<div class="band">
-				<div class="layout-container layout-container--narrow">
+			<my-band>
+				<my-layout-container>
 					<section class="section">
-						<h2 class="heading heading--title u-margin-bottom-16">
-							Stay Updated
-						</h2>
-						<div class="text-passage u-margin-bottom-32">
+						<my-heading tag-name="h2" variant="title" class="u-margin-bottom-16"
+							>Stay Updated</my-heading
+						>
+						<my-text-passage class="u-margin-bottom-32">
 							Subscribe to our newsletter to receive the latest news and
 							updates.
-						</div>
+						</my-text-passage>
 						<form class="newsletter-form">
-							<div class="text-field newsletter-form__text-field">
-								<input
-									type="email"
-									class="text-field__input"
-									placeholder="Enter your email"
-								/>
-							</div>
-							<button type="submit" class="button">Subscribe</button>
+							<my-text-field
+								type="email"
+								placeholder="Enter your email"
+								class="newsletter-form__text-field"
+							></my-text-field>
+							<my-button type="submit" class="button">Subscribe</my-button>
 						</form>
 					</section>
-				</div>
-			</div>
+				</my-layout-container>
+			</my-band>
 		</main>
 
 		<my-footer></my-footer>

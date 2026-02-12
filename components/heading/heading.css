@@ -1,25 +1,33 @@
 /* ==========================================================================
    Heading Block
-   → components/heading/heading.css
    ========================================================================== */
+:host {
+	display: block;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 
 .heading {
 	font-family: "Space Grotesk", sans-serif;
 	font-weight: 500;
 	color: #0a0a0a;
+	margin: 0;
 }
 
 .heading--title-lg {
-	font-size: 48px;
-	line-height: 48px;
+	font-size: 36px;
+	line-height: auto;
 }
 
 .heading--title {
-	font-size: 30px;
-	line-height: 36px;
+	font-size: 24px;
+	line-height: auto;
 }
 
 .heading--title-sm {
 	font-size: 18px;
-	line-height: 27px;
+	line-height: auto;
 }

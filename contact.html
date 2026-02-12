@@ -10,64 +10,51 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500&display=swap"
 			rel="stylesheet"
 		/>
+		<script type="importmap">
+			{
+				"imports": {
+					"lit": "https://esm.sh/lit@3",
+					"lit/": "https://esm.sh/lit@3/"
+				}
+			}
+		</script>
+		<script type="module" src="components/header/header.js"></script>
+		<script
+			type="module"
+			src="components/layout-container/layout-container.js"
+		></script>
+		<script type="module" src="components/page-header/page-header.js"></script>
+		<script type="module" src="components/text-field/text-field.js"></script>
+		<script
+			type="module"
+			src="components/textarea-field/textarea-field.js"
+		></script>
+		<script type="module" src="components/button/button.js"></script>
+		<script type="module" src="components/footer/footer.js"></script>
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<header class="header u-margin-bottom-72">
-			<div class="logo"></div>
-			<nav class="primary-nav">
-				<ul class="primary-nav__list">
-					<li class="primary-nav__item">
-						<a href="./services.html" class="primary-nav__link">Services</a>
-					</li>
-					<li class="primary-nav__item">
-						<a href="./about.html" class="primary-nav__link">About</a>
-					</li>
-					<li class="primary-nav__item">
-						<a href="./contact.html" class="primary-nav__link">Contact</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
+		<my-header class="u-margin-bottom-24"></my-header>
 
 		<main class="main u-margin-bottom-72">
-			<div class="layout-container layout-container--narrow">
-				<h2 class="heading heading--title u-margin-bottom-32">Contact us</h2>
+			<my-layout-container variant="narrow">
+				<my-page-header
+					class="u-margin-bottom-32"
+					heading="Contact us"
+				></my-page-header>
 				<form class="form">
-					<div class="text-field">
-						<label class="text-field__label" for="name">Name</label>
-						<input type="text" id="name" class="text-field__input" />
-					</div>
-					<div class="text-field">
-						<label class="text-field__label" for="email">Email</label>
-						<input type="email" id="email" class="text-field__input" />
-					</div>
-					<div class="text-field">
-						<label class="text-field__label" for="message">Your Message</label>
-						<textarea id="message" class="text-field__textarea"></textarea>
-					</div>
-					<button type="submit" class="button form__button">Submit</button>
+					<my-text-field type="text" id="name" label="Name"></my-text-field>
+					<my-text-field type="email" id="email" label="Email"></my-text-field>
+					<my-textarea-field
+						placeholder="Enter your message"
+						id="message"
+						label="Your Message"
+					></my-textarea-field>
+					<my-button type="submit">Submit</my-button>
 				</form>
-			</div>
+			</my-layout-container>
 		</main>
 
-		<footer class="footer">
-			<nav class="footer-nav">
-				<ul class="footer-nav__list">
-					<li class="footer-nav__item">
-						<a href="./services.html" class="footer-nav__link">Services</a>
-					</li>
-					<li class="footer-nav__item">
-						<a href="./about.html" class="footer-nav__link">About</a>
-					</li>
-					<li class="footer-nav__item">
-						<a href="./contact.html" class="footer-nav__link">Contact</a>
-					</li>
-				</ul>
-			</nav>
-			<p class="footer__copyright">
-				&copy; 2026 My Company. All rights reserved.
-			</p>
-		</footer>
+		<my-footer></my-footer>
 	</body>
 </html>

@@ -1,4 +1,5 @@
-import { LitElement, html } from "lit";
+import { LitElement } from "lit";
+import { html, unsafeStatic } from "lit/static-html.js";
 import styles from "./heading.css" with { type: "css" };
 
 const VALID_TAG_NAMES = ["h1", "h2", "h3", "h4", "h5", "h6"];
@@ -23,7 +24,8 @@ class MyHeading extends LitElement {
 	}
 
 	render() {
-		return html`<${this._tag} class="heading ${this.variant ? `heading--${this.variant}` : ""}"><slot></slot></${this._tag}>`;
+		const tag = unsafeStatic(this._tag);
+		return html`<${tag} class="heading ${this.variant ? `heading--${this.variant}` : ""}"><slot></slot></${tag}>`;
 	}
 }
 

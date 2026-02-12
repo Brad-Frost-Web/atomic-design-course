@@ -1,7 +1,16 @@
 /* ==========================================================================
    Layout Container
-   → components/layout-container/layout-container.css
+
    ========================================================================== */
+
+:host {
+	display: block;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 
 .layout-container {
 	margin: 0 auto;

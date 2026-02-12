@@ -1,7 +1,14 @@
 /* ==========================================================================
    Footer Block
-   → components/footer/footer.css (footer + footer nav)
    ========================================================================== */
+:host {
+	display: block;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 
 .footer {
 	display: flex;
@@ -15,6 +22,7 @@
 	font-size: 16px;
 	line-height: 24px;
 	color: #4a5565;
+	margin: 0;
 	text-align: center;
 }
 
@@ -22,8 +30,12 @@
 	display: flex;
 	gap: 24px;
 	justify-content: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 .footer-nav__link {
 	color: #4a5565;
+	text-decoration: none;
 }

@@ -3,20 +3,22 @@ import styles from "./layout-container.css" with { type: "css" };
 
 class MyLayoutContainer extends LitElement {
 	static properties = {
-		narrow: { type: Boolean, reflect: true },
+		variant: { type: String, reflect: true },
 	};
 
 	static styles = [styles];
 
 	constructor() {
 		super();
-		this.narrow = false;
+		this.variant = "";
 	}
 
 	render() {
 		return html`
 			<div
-				class="layout-container ${this.narrow ? "layout-container--narrow" : ""}"
+				class="layout-container ${this.variant === "narrow"
+					? "layout-container--narrow"
+					: ""}"
 			>
 				<slot></slot>
 			</div>

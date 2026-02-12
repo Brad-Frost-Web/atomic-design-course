@@ -1,8 +1,15 @@
 /* ==========================================================================
    Card Grid Block
-   → components/grid/grid.css
    ========================================================================== */
 
+:host {
+	display: block;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 .grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);

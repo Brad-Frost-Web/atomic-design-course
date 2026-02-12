@@ -4,20 +4,20 @@ import "../heading/heading.js";
 
 class MyPageHeader extends LitElement {
 	static properties = {
-		text: { type: String },
+		heading: { type: String },
 	};
 
 	static styles = [styles];
 
 	constructor() {
 		super();
-		this.text = "";
+		this.heading = "";
 	}
 
 	render() {
 		return html`
 			<div class="page-header">
-				<my-heading variant="title">${this.text}</my-heading>
+				<my-heading tagName="h1" variant="title-lg">${this.heading}</my-heading>
 			</div>
 		`;
 	}
