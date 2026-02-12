@@ -1,0 +1,94 @@
+{
+  "button": {
+    "color": {
+      "background": {
+        "default": {
+          "value": "{color.neutral.white}"
+        },
+        "hover": {
+          "value": "{color.neutral.white}"
+        },
+        "active": {
+          "value": "{color.neutral.white}"
+        },
+        "disabled": {
+          "value": "{color.neutral.white}"
+        }
+      },
+      "content": {
+        "default": {
+          "value": "{color.neutral.900}"
+        },
+        "hover": {
+          "value": "{color.neutral.900}"
+        },
+        "active": {
+          "value": "{color.neutral.900}"
+        },
+        "disabled": {
+          "value": "{color.neutral.600}"
+        }
+      },
+      "border": {
+        "default": {
+          "value": "{color.neutral.900}"
+        },
+        "hover": {
+          "value": "{color.neutral.900}"
+        },
+        "active": {
+          "value": "{color.neutral.900}"
+        },
+        "disabled": {
+          "value": "{color.neutral.600}"
+        }
+      }
+    },
+    "primary": {
+      "color": {
+        "background": {
+          "default": {
+            "value": "{color.neutral.700}"
+          },
+          "hover": {
+            "value": "{color.neutral.800}"
+          },
+          "active": {
+            "value": "{color.neutral.800}"
+          },
+          "disabled": {
+            "value": "{color.neutral.200}"
+          }
+        },
+        "content": {
+          "default": {
+            "value": "{color.neutral.white}"
+          },
+          "hover": {
+            "value": "{color.neutral.white}"
+          },
+          "active": {
+            "value": "{color.neutral.white}"
+          },
+          "disabled": {
+            "value": "{color.neutral.white}"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{color.neutral.700}"
+          },
+          "hover": {
+            "value": "{color.neutral.800}"
+          },
+          "active": {
+            "value": "{color.neutral.800}"
+          },
+          "disabled": {
+            "value": "{color.neutral.200}"
+          }
+        }
+      }
+    }
+  }
+}

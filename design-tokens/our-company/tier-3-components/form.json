@@ -1,0 +1,34 @@
+{
+  "form": {
+    "color": {
+      "background": {
+        "default": {
+          "value": "{color.neutral.white}"
+        },
+        "focus": {
+          "value": "{color.neutral.white}"
+        },
+        "hover": {
+          "value": "{color.neutral.white}"
+        },
+        "active": {
+          "value": "{color.neutral.white}"
+        }
+      },
+      "border": {
+        "default": {
+          "value": "{color.neutral.500}"
+        },
+        "focus": {
+          "value": "{color.neutral.black}"
+        },
+        "hover": {
+          "value": "{color.neutral.black}"
+        },
+        "active": {
+          "value": "{color.neutral.black}"
+        }
+      }
+    }
+  }
+}

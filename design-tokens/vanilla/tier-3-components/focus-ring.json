@@ -1,0 +1,14 @@
+{
+  "focus-ring": {
+    "color": {
+      "border": {
+        "default": {
+          "value": "{color.neutral.black}"
+        },
+        "knockout": {
+          "value": "{color.neutral.white}"
+        }
+      }
+    }
+  }
+}

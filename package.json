@@ -6,6 +6,11 @@
 		"lit": "^3.3.2"
 	},
 	"scripts": {
-		"start": "npx serve ."
+		"start": "npx serve .",
+		"build:tokens": "node design-tokens/config.js --verbose"
+	},
+	"devDependencies": {
+		"minimist": "^1.2.8",
+		"style-dictionary": "^5.3.0"
 	}
 }

@@ -1,0 +1,32 @@
+{
+  "border": {
+    "radius": {
+      "none": {
+        "value": "{border.radius.0}"
+      },
+      "sm": {
+        "value": "{border.radius.2}"
+      },
+      "md": {
+        "value": "{border.radius.8}"
+      },
+      "lg": {
+        "value": "{border.radius.16}"
+      }
+    },
+    "width": {
+      "sm": {
+        "value": "{border.width.1}"
+      },
+      "md": {
+        "value": "{border.width.2}"
+      },
+      "lg": {
+        "value": "{border.width.4}"
+      },
+      "xl": {
+        "value": "{border.width.8}"
+      }
+    }
+  }
+}

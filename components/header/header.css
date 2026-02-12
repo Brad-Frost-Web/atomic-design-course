@@ -14,7 +14,7 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 24px;
-	background-color: #1d293d;
+	background-color: var(--oc-theme-color-background-knockout);
 }
 
 .logo {
