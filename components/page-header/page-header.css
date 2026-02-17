@@ -8,6 +8,10 @@
 	box-sizing: border-box;
 }
 
-.page-header__description {
+.page-header {
 	margin-block-end: var(--oc-spacing-16);
+}
+
+.page-header__description {
+	margin-block-start: var(--oc-spacing-16);
 }

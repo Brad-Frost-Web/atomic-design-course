@@ -1,11 +1,13 @@
-import { LitElement, html } from "lit";
-import styles from "./hero.css" with { type: "css" };
+import { LitElement, html, unsafeCSS } from "lit";
+import styles from "./hero.css?inline";
 import "../heading/heading.js";
 import "../text-passage/text-passage.js";
 import "../button/button.js";
 
 class MyHero extends LitElement {
-	static styles = [styles];
+	static get styles() {
+		return unsafeCSS(styles);
+	}
 
 	render() {
 		return html`

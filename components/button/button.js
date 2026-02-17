@@ -1,12 +1,14 @@
-import { LitElement, html } from "lit";
-import styles from "./button.css" with { type: "css" };
+import { LitElement, html, unsafeCSS } from "lit";
+import styles from "./button.css?inline";
 
 class MyButton extends LitElement {
 	static properties = {
 		type: { type: String },
 	};
 
-	static styles = [styles];
+	static get styles() {
+		return unsafeCSS(styles);
+	}
 
 	constructor() {
 		super();

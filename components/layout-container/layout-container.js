@@ -1,12 +1,14 @@
-import { LitElement, html } from "lit";
-import styles from "./layout-container.css" with { type: "css" };
+import { LitElement, html, unsafeCSS } from "lit";
+import styles from "./layout-container.css?inline";
 
 class MyLayoutContainer extends LitElement {
 	static properties = {
 		variant: { type: String, reflect: true },
 	};
 
-	static styles = [styles];
+	static get styles() {
+		return unsafeCSS(styles);
+	}
 
 	constructor() {
 		super();

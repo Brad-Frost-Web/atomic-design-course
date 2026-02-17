@@ -1,8 +1,10 @@
-import { LitElement, html } from "lit";
-import styles from "./header.css" with { type: "css" };
+import { LitElement, html, unsafeCSS } from "lit";
+import styles from "./header.css?inline";
 
 class MyHeader extends LitElement {
-	static styles = [styles];
+	static get styles() {
+		return unsafeCSS(styles);
+	}
 
 	render() {
 		return html`

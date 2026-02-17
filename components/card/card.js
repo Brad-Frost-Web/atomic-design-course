@@ -1,5 +1,5 @@
-import { LitElement, html } from "lit";
-import styles from "./card.css" with { type: "css" };
+import { LitElement, html, unsafeCSS } from "lit";
+import styles from "./card.css?inline";
 import "../heading/heading.js";
 import "../text-passage/text-passage.js";
 
@@ -9,7 +9,9 @@ class MyCard extends LitElement {
 		description: { type: String },
 	};
 
-	static styles = [styles];
+	static get styles() {
+		return unsafeCSS(styles);
+	}
 
 	constructor() {
 		super();

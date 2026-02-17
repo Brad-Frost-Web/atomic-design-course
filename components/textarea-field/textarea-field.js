@@ -1,5 +1,5 @@
-import { LitElement, html } from "lit";
-import styles from "./textarea-field.css" with { type: "css" };
+import { LitElement, html, unsafeCSS } from "lit";
+import styles from "./textarea-field.css?inline";
 
 class MyTextareaField extends LitElement {
 	static properties = {
@@ -7,7 +7,9 @@ class MyTextareaField extends LitElement {
 		placeholder: { type: String },
 	};
 
-	static styles = [styles];
+	static get styles() {
+		return unsafeCSS(styles);
+	}
 
 	constructor() {
 		super();

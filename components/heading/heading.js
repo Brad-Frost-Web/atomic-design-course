@@ -1,6 +1,6 @@
-import { LitElement } from "lit";
+import { LitElement, unsafeCSS } from "lit";
 import { html, unsafeStatic } from "lit/static-html.js";
-import styles from "./heading.css" with { type: "css" };
+import styles from "./heading.css?inline";
 
 const VALID_TAG_NAMES = ["h1", "h2", "h3", "h4", "h5", "h6"];
 
@@ -10,7 +10,9 @@ class MyHeading extends LitElement {
 		variant: { type: String, reflect: true },
 	};
 
-	static styles = [styles];
+	static get styles() {
+		return unsafeCSS(styles);
+	}
 
 	constructor() {
 		super();
