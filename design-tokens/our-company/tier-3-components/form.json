@@ -1,1 +1,42 @@
-{}
+{
+	"form": {
+		"color": {
+			"background": {
+				"default": {
+					"type": "color",
+					"value": "{color.neutral.white}"
+				},
+				"focus": {
+					"type": "color",
+					"value": "{color.neutral.white}"
+				},
+				"hover": {
+					"type": "color",
+					"value": "{color.neutral.white}"
+				},
+				"active": {
+					"type": "color",
+					"value": "{color.neutral.white}"
+				}
+			},
+			"border": {
+				"default": {
+					"type": "color",
+					"value": "{color.border.default}"
+				},
+				"focus": {
+					"type": "color",
+					"value": "{color.neutral.black}"
+				},
+				"hover": {
+					"type": "color",
+					"value": "{color.neutral.black}"
+				},
+				"active": {
+					"type": "color",
+					"value": "{color.neutral.black}"
+				}
+			}
+		}
+	}
+}
