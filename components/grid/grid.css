@@ -12,6 +12,9 @@
 }
 .grid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
 	gap: var(--oc-spacing-24);
+}
+
+.grid--3up {
+	grid-template-columns: repeat(3, 1fr);
 }
