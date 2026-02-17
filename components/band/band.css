@@ -12,5 +12,5 @@
 
 .band {
 	padding: 56px 0;
-	background: #eff6ff;
+	background: var(--oc-theme-color-background-brand);
 }

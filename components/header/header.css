@@ -20,22 +20,26 @@
 .logo {
 	width: 40px;
 	height: 40px;
-	background-color: #2b7fff;
+	background-color: var(--oc-theme-color-background-brand);
 	border-radius: 50%;
 }
 
 .primary-nav__list {
 	display: flex;
-	gap: 24px;
+	gap: var(--oc-theme-spacing-24);
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
 .primary-nav__link {
-	font-size: 16px;
-	line-height: 24px;
-	color: #fff;
+	font-family: var(--oc-theme-typography-body-default-font-family);
+	font-size: var(--oc-theme-typography-body-default-font-size);
+	line-height: var(--oc-theme-typography-body-default-line-height);
+	font-weight: var(--oc-theme-typography-body-default-font-weight);
+	letter-spacing: var(--oc-theme-typography-body-default-letter-spacing);
+	text-transform: var(--oc-theme-typography-body-default-text-transform);
+	color: var(--oc-theme-color-content-default);
 	text-decoration: none;
 	transition: opacity 0.2s ease;
 }

@@ -113,6 +113,7 @@ const formatVariables = (dictionary, includeTier1 = false) => {
 		/* 1 */
 		if (
 			prop.path[0] === "z-index" ||
+			prop.path[0] === "spacing" ||
 			includeTier1 ||
 			isHigherTierToken(prop.filePath)
 		) {
@@ -128,7 +129,10 @@ const formatVariables = (dictionary, includeTier1 = false) => {
 			) {
 				/* 3 */
 				transformLineHeight(dictionary, prop, themeTokens);
-			} else if (prop.path[0] === "z-index") {
+			} else if (
+				prop.path[0] === "z-index" ||
+				prop.path[0] === "spacing"
+			) {
 				/* 4 */
 				const cleanPath = prop.path
 					.map((segment) =>
@@ -233,11 +237,9 @@ const getStyleDictionaryConfig = (theme) => {
 				transformGroup: "custom/css",
 				prefix: "oc",
 				buildPath: "design-tokens",
-				filter: {
-					attributes: {
-						category: "theme",
-					},
-				},
+				filter: (token) =>
+					token.attributes?.category === "theme" ||
+					token.attributes?.category === "spacing",
 				files: [
 					{
 						destination: `./${theme}/build/css/tokens.css`,
