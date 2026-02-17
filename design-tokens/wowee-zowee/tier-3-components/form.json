@@ -4,7 +4,7 @@
 			"background": {
 				"default": {
 					"type": "color",
-					"value": "{color.neutral.white}"
+					"value": "{color.dark.purple}"
 				},
 				"focus": {
 					"type": "color",
@@ -22,19 +22,19 @@
 			"border": {
 				"default": {
 					"type": "color",
-					"value": "{color.neutral.500}"
+					"value": "{color.purple.amethyst}"
 				},
 				"focus": {
 					"type": "color",
-					"value": "{color.neutral.black}"
+					"value": "{color.neon.magenta}"
 				},
 				"hover": {
 					"type": "color",
-					"value": "{color.neutral.black}"
+					"value": "{color.neon.magenta}"
 				},
 				"active": {
 					"type": "color",
-					"value": "{color.neutral.black}"
+					"value": "{color.neon.magenta}"
 				}
 			}
 		}

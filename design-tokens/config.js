@@ -4,7 +4,7 @@ import minimist from "minimist";
 /**
  * Define available themes
  */
-const AVAILABLE_THEMES = ["vanilla", "our-company"];
+const AVAILABLE_THEMES = ["vanilla", "our-company", "wowee-zowee"];
 
 /**
  * Look for args passed on the command line

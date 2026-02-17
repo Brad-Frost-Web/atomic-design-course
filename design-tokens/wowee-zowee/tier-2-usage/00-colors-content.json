@@ -3,52 +3,52 @@
 		"content": {
 			"default": {
 				"type": "color",
-				"value": "{color.neutral.900}"
+				"value": "{color.neon.green}"
 			},
 			"default-hover": {
 				"type": "color",
-				"value": "{color.neutral.black}"
+				"value": "{color.neon.chartreuse}"
 			},
 			"subtle": {
 				"type": "color",
-				"value": "{color.neutral.500}"
+				"value": "{color.neon.cyan}"
 			},
 			"knockout": {
 				"type": "color",
-				"value": "{color.neutral.white}"
+				"value": "{color.dark.navy}"
 			},
 			"brand": {
 				"type": "color",
-				"value": "{color.brand.blue.500}"
+				"value": "{color.pink.neon}"
 			},
 			"brand-hover": {
 				"type": "color",
-				"value": "{color.brand.gray.900}"
+				"value": "{color.pink.light}"
 			},
 			"brand-knockout": {
 				"type": "color",
-				"value": "{color.brand.gray.100}"
+				"value": "{color.neon.yellow}"
 			},
 			"disabled": {
 				"type": "color",
-				"value": "{color.neutral.600}"
+				"value": "{color.dark.muted}"
 			},
 			"utility": {
 				"error": {
 					"type": "color",
-					"value": "{color.utility.red.600}"
+					"value": "{color.neon.red}"
 				},
 				"warning": {
 					"type": "color",
-					"value": "{color.utility.yellow.600}"
+					"value": "{color.yellow.vivid}"
 				},
 				"success": {
 					"type": "color",
-					"value": "{color.utility.green.600}"
+					"value": "{color.green.spring}"
 				},
 				"info": {
 					"type": "color",
-					"value": "{color.utility.blue.600}"
+					"value": "{color.blue.sky}"
 				}
 			}
 		}

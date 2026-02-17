@@ -3,7 +3,7 @@
 		"display-default": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.font-weight.700}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -19,7 +19,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.font-family.times-new-roman}"
+				"value": "{font.family.monofett}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -29,7 +29,7 @@
 		"display-default-mobile": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.display-default.font-weight}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -45,7 +45,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.display-default.font-family}"
+				"value": "{font.family.monofett}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -55,7 +55,7 @@
 		"display-sm": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.font-weight.400}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -71,7 +71,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.font-family.times-new-roman}"
+				"value": "{font.family.monofett}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -81,7 +81,7 @@
 		"display-sm-mobile": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.display-sm.font-weight}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -97,7 +97,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.display-sm.font-family}"
+				"value": "{font.family.monofett}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -107,7 +107,7 @@
 		"headline-lg": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.font-weight.700}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -123,7 +123,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.font-family.times-new-roman}"
+				"value": "{font.family.monofett}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -133,7 +133,7 @@
 		"headline-lg-mobile": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.headline-lg.font-weight}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -149,7 +149,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.headline-lg.font-family}"
+				"value": "{font.family.monofett}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -159,7 +159,7 @@
 		"headline-default": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.font-weight.700}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -175,7 +175,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.font-family.times-new-roman}"
+				"value": "{font.family.monofett}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -185,7 +185,7 @@
 		"headline-default-mobile": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.headline-default.font-weight}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -201,7 +201,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.headline-default.font-family}"
+				"value": "{font.family.monofett}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -211,7 +211,7 @@
 		"headline-sm": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.font-weight.700}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -227,7 +227,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.font-family.times-new-roman}"
+				"value": "{font.family.monofett}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -237,7 +237,7 @@
 		"headline-sm-mobile": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.headline-sm.font-weight}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -253,7 +253,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.headline-sm.font-family}"
+				"value": "{font.family.monofett}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -263,11 +263,11 @@
 		"title-lg": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.font-weight.700}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
-				"value": "{typography.font-size.32}"
+				"value": "{typography.font-size.48}"
 			},
 			"line-height": {
 				"type": "dimension",
@@ -279,7 +279,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.font-family.times-new-roman}"
+				"value": "{font.family.monofett}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -289,7 +289,7 @@
 		"title-lg-mobile": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.title-lg.font-weight}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -305,7 +305,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.title-lg.font-family}"
+				"value": "{font.family.monofett}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -315,7 +315,7 @@
 		"title-default": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.font-weight.700}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -331,7 +331,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.font-family.times-new-roman}"
+				"value": "{font.family.monofett}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -341,7 +341,7 @@
 		"title-sm": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.font-weight.700}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -357,7 +357,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.font-family.times-new-roman}"
+				"value": "{font.family.monofett}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -367,7 +367,7 @@
 		"label-lg": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.font-weight.700}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -383,7 +383,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.font-family.times-new-roman}"
+				"value": "{font.family.margarine}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -393,7 +393,7 @@
 		"label-default": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.font-weight.700}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -409,7 +409,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.font-family.times-new-roman}"
+				"value": "{font.family.margarine}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -419,7 +419,7 @@
 		"label-sm": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.font-weight.700}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -435,7 +435,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.font-family.times-new-roman}"
+				"value": "{font.family.margarine}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -445,7 +445,7 @@
 		"body-lg": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.font-weight.400}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -461,7 +461,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.font-family.times-new-roman}"
+				"value": "{font.family.margarine}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -471,7 +471,7 @@
 		"body-default": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.font-weight.400}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -487,7 +487,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.font-family.times-new-roman}"
+				"value": "{font.family.margarine}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -497,7 +497,7 @@
 		"body-sm": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.font-weight.400}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -513,7 +513,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.font-family.times-new-roman}"
+				"value": "{font.family.margarine}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -523,7 +523,7 @@
 		"meta-default": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.font-weight.700}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -539,7 +539,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.font-family.times-new-roman}"
+				"value": "{font.family.margarine}"
 			},
 			"text-transform": {
 				"type": "string",
@@ -549,7 +549,7 @@
 		"meta-sm": {
 			"font-weight": {
 				"type": "dimension",
-				"value": "{typography.font-weight.700}"
+				"value": "{font.weight.400}"
 			},
 			"font-size": {
 				"type": "dimension",
@@ -565,7 +565,7 @@
 			},
 			"font-family": {
 				"type": "string",
-				"value": "{typography.font-family.times-new-roman}"
+				"value": "{font.family.margarine}"
 			},
 			"text-transform": {
 				"type": "string",

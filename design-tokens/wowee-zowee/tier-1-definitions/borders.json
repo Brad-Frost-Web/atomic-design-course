@@ -1,0 +1,32 @@
+{
+	"border": {
+		"radius": {
+			"32": {
+				"type": "dimension",
+				"value": "32px"
+			},
+			"48": {
+				"type": "dimension",
+				"value": "48px"
+			},
+			"64": {
+				"type": "dimension",
+				"value": "64px"
+			}
+		},
+		"width": {
+			"2": {
+				"type": "dimension",
+				"value": "2px"
+			},
+			"4": {
+				"type": "dimension",
+				"value": "4px"
+			},
+			"8": {
+				"type": "dimension",
+				"value": "8px"
+			}
+		}
+	}
+}

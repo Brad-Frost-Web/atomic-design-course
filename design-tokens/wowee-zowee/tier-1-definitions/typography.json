@@ -1,15 +1,5 @@
 {
 	"typography": {
-		"font-weight": {
-			"400": {
-				"type": "dimension",
-				"value": "400"
-			},
-			"700": {
-				"type": "dimension",
-				"value": "700"
-			}
-		},
 		"font-size": {
 			"12": {
 				"type": "dimension",
@@ -144,12 +134,6 @@
 				"value": "0.5px"
 			}
 		},
-		"font-family": {
-			"times-new-roman": {
-				"type": "string",
-				"value": "Times New Roman"
-			}
-		},
 		"text-transform": {
 			"none": {
 				"type": "string",
@@ -158,6 +142,24 @@
 			"uppercase": {
 				"type": "string",
 				"value": "uppercase"
+			}
+		}
+	},
+	"font": {
+		"weight": {
+			"400": {
+				"type": "dimension",
+				"value": "400"
+			}
+		},
+		"family": {
+			"monofett": {
+				"type": "string",
+				"value": "Monofett"
+			},
+			"margarine": {
+				"type": "string",
+				"value": "Margarine"
 			}
 		}
 	}

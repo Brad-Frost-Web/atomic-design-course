@@ -3,49 +3,49 @@
 		"border": {
 			"default": {
 				"type": "color",
-				"value": "{color.neutral.300}"
+				"value": "{color.neon.cyan}"
 			},
 			"default-hover": {
 				"type": "color",
-				"value": "{color.neutral.500}"
+				"value": "{color.neon.magenta}"
 			},
 			"subtle": {
 				"type": "color",
-				"value": "{color.neutral.200}"
+				"value": "{color.pink.hot}"
 			},
 			"strong": {
 				"type": "color",
-				"value": "{color.neutral.900}"
+				"value": "{color.neon.yellow}"
 			},
 			"knockout": {
 				"type": "color",
-				"value": "{color.neutral.400}"
+				"value": "{color.neon.green}"
 			},
 			"brand": {
 				"type": "color",
-				"value": "{color.brand.gray.300}"
+				"value": "{color.pink.deep}"
 			},
 			"utility": {
 				"error": {
 					"type": "color",
-					"value": "{color.utility.red.700}"
+					"value": "{color.neon.red}"
 				},
 				"warning": {
 					"type": "color",
-					"value": "{color.utility.yellow.700}"
+					"value": "{color.yellow.vivid}"
 				},
 				"success": {
 					"type": "color",
-					"value": "{color.utility.green.700}"
+					"value": "{color.green.spring}"
 				},
 				"info": {
 					"type": "color",
-					"value": "{color.utility.blue.700}"
+					"value": "{color.blue.sky}"
 				}
 			},
 			"disabled": {
 				"type": "color",
-				"value": "{color.neutral.200}"
+				"value": "{color.dark.muted}"
 			}
 		}
 	}

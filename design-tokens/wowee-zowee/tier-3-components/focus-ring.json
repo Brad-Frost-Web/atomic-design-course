@@ -4,11 +4,11 @@
 			"border": {
 				"default": {
 					"type": "color",
-					"value": "{color.neutral.black}"
+					"value": "{color.neon.yellow}"
 				},
 				"knockout": {
 					"type": "color",
-					"value": "{color.neutral.white}"
+					"value": "{color.neon.magenta}"
 				}
 			}
 		}

@@ -3,33 +3,33 @@
 		"radius": {
 			"none": {
 				"type": "dimension",
-				"value": "{border.radius.0}"
+				"value": "0px"
 			},
 			"sm": {
 				"type": "dimension",
-				"value": "{border.radius.4}"
+				"value": "{border.radius.32}"
 			},
 			"md": {
 				"type": "dimension",
-				"value": "{border.radius.8}"
+				"value": "{border.radius.48}"
 			},
 			"lg": {
 				"type": "dimension",
-				"value": "{border.radius.16}"
+				"value": "{border.radius.64}"
 			}
 		},
 		"width": {
 			"sm": {
 				"type": "dimension",
-				"value": "{border.width.1}"
+				"value": "{border.width.2}"
 			},
 			"md": {
 				"type": "dimension",
-				"value": "{border.width.2}"
+				"value": "{border.width.4}"
 			},
 			"lg": {
 				"type": "dimension",
-				"value": "{border.width.4}"
+				"value": "{border.width.8}"
 			},
 			"xl": {
 				"type": "dimension",

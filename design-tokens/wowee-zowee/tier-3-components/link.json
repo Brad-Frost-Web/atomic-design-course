@@ -4,19 +4,19 @@
 			"content": {
 				"default": {
 					"type": "color",
-					"value": "{color.brand.gray.600}"
+					"value": "{color.neon.orange}"
 				},
 				"hover": {
 					"type": "color",
-					"value": "{color.brand.gray.900}"
+					"value": "{color.neon.yellow}"
 				},
 				"active": {
 					"type": "color",
-					"value": "{color.brand.gray.900}"
+					"value": "{color.neon.orange-red}"
 				},
 				"visited": {
 					"type": "color",
-					"value": "{color.brand.gray.600}"
+					"value": "{color.pink.hot}"
 				}
 			}
 		},
@@ -29,15 +29,15 @@
 					},
 					"hover": {
 						"type": "color",
-						"value": "{color.brand.gray.200}"
+						"value": "{color.neutral.200}"
 					},
 					"active": {
 						"type": "color",
-						"value": "{color.brand.gray.200}"
+						"value": "{color.neutral.200}"
 					},
 					"visited": {
 						"type": "color",
-						"value": "{color.brand.gray.300}"
+						"value": "{color.neutral.300}"
 					}
 				}
 			}

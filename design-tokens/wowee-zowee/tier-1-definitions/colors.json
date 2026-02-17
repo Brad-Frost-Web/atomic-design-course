@@ -1,0 +1,144 @@
+{
+	"color": {
+		"neon": {
+			"green": {
+				"type": "color",
+				"value": "#39ff14"
+			},
+			"chartreuse": {
+				"type": "color",
+				"value": "#7fff00"
+			},
+			"cyan": {
+				"type": "color",
+				"value": "#00ffff"
+			},
+			"magenta": {
+				"type": "color",
+				"value": "#ff00ff"
+			},
+			"yellow": {
+				"type": "color",
+				"value": "#ffff00"
+			},
+			"red": {
+				"type": "color",
+				"value": "#ff073a"
+			},
+			"orange": {
+				"type": "color",
+				"value": "#ff6600"
+			},
+			"orange-red": {
+				"type": "color",
+				"value": "#ff3300"
+			},
+			"red-13": {
+				"type": "color",
+				"value": "#ff073a21"
+			}
+		},
+		"pink": {
+			"deep": {
+				"type": "color",
+				"value": "#ff1493"
+			},
+			"hot": {
+				"type": "color",
+				"value": "#ff69b4"
+			},
+			"neon": {
+				"type": "color",
+				"value": "#ff6ec7"
+			},
+			"light": {
+				"type": "color",
+				"value": "#ff99cc"
+			},
+			"dark": {
+				"type": "color",
+				"value": "#cc1177"
+			},
+			"deep-25": {
+				"type": "color",
+				"value": "#ff149340"
+			}
+		},
+		"dark": {
+			"navy": {
+				"type": "color",
+				"value": "#0a0a2e"
+			},
+			"navy-hover": {
+				"type": "color",
+				"value": "#151545"
+			},
+			"navy-muted": {
+				"type": "color",
+				"value": "#1a1a3e"
+			},
+			"purple": {
+				"type": "color",
+				"value": "#1b0b3b"
+			},
+			"purple-hover": {
+				"type": "color",
+				"value": "#2a1b4b"
+			},
+			"muted": {
+				"type": "color",
+				"value": "#4a4a6a"
+			},
+			"navy-50": {
+				"type": "color",
+				"value": "#0a0a2e80"
+			}
+		},
+		"blue": {
+			"sky": {
+				"type": "color",
+				"value": "#00bfff"
+			},
+			"sky-13": {
+				"type": "color",
+				"value": "#00bfff21"
+			}
+		},
+		"green": {
+			"spring": {
+				"type": "color",
+				"value": "#00ff7f"
+			},
+			"spring-13": {
+				"type": "color",
+				"value": "#00ff7f21"
+			}
+		},
+		"cyan": {
+			"dark": {
+				"type": "color",
+				"value": "#00cccc"
+			}
+		},
+		"yellow": {
+			"vivid": {
+				"type": "color",
+				"value": "#ffd300"
+			},
+			"vivid-13": {
+				"type": "color",
+				"value": "#ffd30021"
+			}
+		},
+		"purple": {
+			"amethyst": {
+				"type": "color",
+				"value": "#9b59b6"
+			}
+		},
+		"transparent": {
+			"type": "color",
+			"value": "#00000000"
+		}
+	}
+}
