@@ -1,6 +1,9 @@
 /** @type { import('@storybook/web-components-vite').StorybookConfig } */
 const config = {
-	stories: ["../components/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+	stories: [
+		"../components/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+		"./pages/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+	],
 	addons: [
 		"@chromatic-com/storybook",
 		"@storybook/addon-vitest",
