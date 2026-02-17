@@ -129,10 +129,7 @@ const formatVariables = (dictionary, includeTier1 = false) => {
 			) {
 				/* 3 */
 				transformLineHeight(dictionary, prop, themeTokens);
-			} else if (
-				prop.path[0] === "z-index" ||
-				prop.path[0] === "spacing"
-			) {
+			} else if (prop.path[0] === "z-index" || prop.path[0] === "spacing") {
 				/* 4 */
 				const cleanPath = prop.path
 					.map((segment) =>
@@ -166,6 +163,16 @@ const formatVariables = (dictionary, includeTier1 = false) => {
  * @param {string} theme
  */
 const getStyleDictionaryConfig = (theme) => {
+	/**
+	 * Register the CSS formatter for .[theme-name] ruleset for Storybook only or if you want to use class name to define tokens
+	 */
+	StyleDictionary.registerFormat({
+		name: "css/variables-themed",
+		format: function (dictionary) {
+			return `.${theme} {\n${formatVariables(dictionary, true)}\n}\n`;
+		},
+	});
+
 	/**
 	 * Register the base font size to convert px to rem
 	 */
@@ -244,6 +251,10 @@ const getStyleDictionaryConfig = (theme) => {
 					{
 						destination: `./${theme}/build/css/tokens.css`,
 						format: "css/custom-variables",
+					},
+					{
+						destination: `./${theme}/build/css/${theme}.css`,
+						format: "css/variables-themed",
 					},
 				],
 			},
