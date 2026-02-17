@@ -26,8 +26,14 @@ npm install
 npm run build:tokens
 ```
 
-3. To start the server to view the pages in localhost, run:
+3. To start the server to view the Storybook on localhost, run:
 
 ```
 npm start
+```
+
+4. To start the server to view the pages in the app on localhost, run:
+
+```
+npm run start-app
 ```
