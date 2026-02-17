@@ -8,7 +8,13 @@ This demo rounds out the creation of the design system component library. We've 
 
 ### Start the server
 
-To start the server to view the pages in localhost:
+1. Install dependencies:
+
+```
+npm install
+```
+
+2. To start the server to view the pages in localhost, run:
 
 ```
 npm start
