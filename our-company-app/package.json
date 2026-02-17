@@ -1,0 +1,18 @@
+{
+  "name": "@brad-frost/our-company-app",
+  "version": "1.0.0",
+  "description": "We are a company",
+  "type": "module",
+  "dependencies": {
+    "@brad-frost/our-company-design-tokens": "1.0.0",
+    "@brad-frost/our-company-web-components": "1.0.0",
+    "lit": "^3.3.2"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  },
+  "scripts": {
+    "start": "vite",
+    "preview": "vite preview"
+  }
+}

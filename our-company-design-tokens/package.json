@@ -1,0 +1,15 @@
+{
+	"name": "@brad-frost/our-company-design-tokens",
+	"version": "1.0.0",
+	"description": "We are a company",
+	"dependencies": {
+		"lit": "^3.3.2"
+	},
+	"scripts": {
+		"build:tokens": "node ./config.js --verbose"
+	},
+	"devDependencies": {
+		"minimist": "^1.2.8",
+		"style-dictionary": "^5.3.0"
+	}
+}

@@ -4,29 +4,22 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>My Company</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<!-- <link rel="stylesheet" href="design-tokens/wowee-zowee/css/fonts.css" /> -->
-		<link rel="stylesheet" href="design-tokens/vanilla/css/fonts.css" />
-		<!-- <link href="design-tokens/our-company/css/fonts.css" rel="stylesheet" /> -->
-
-		<!-- Design Tokens-->
-		<link rel="stylesheet" href="design-tokens/vanilla/build/css/tokens.css" />
-		<!-- <link rel="stylesheet" href="design-tokens/wowee-zowee/build/css/tokens.css" /> -->
-		<!-- <link
+		<!-- Design Tokens (served from workspace package via Vite) -->
+		<!-- <link rel="stylesheet" href="design-tokens/vanilla/css/fonts.css" />
+		<link rel="stylesheet" href="design-tokens/vanilla/build/css/tokens.css" /> -->
+		<!-- <link rel="stylesheet" href="design-tokens/wowee-zowee/css/fonts.css" />
+		<link
+		rel="stylesheet"
+		href="design-tokens/wowee-zowee/build/css/tokens.css"
+	/> -->
+		<link rel="stylesheet" href="design-tokens/our-company/css/fonts.css" />
+		<link
 			rel="stylesheet"
 			href="design-tokens/our-company/build/css/tokens.css"
-		/> -->
+		/>
 		<!-- Styles -->
 		<link rel="stylesheet" href="styles.css" />
-		<!-- Component Imports -->
-		<script type="importmap">
-			{
-				"imports": {
-					"lit": "https://esm.sh/lit@3",
-					"lit/": "https://esm.sh/lit@3/"
-				}
-			}
-		</script>
+		<!-- Component Imports (resolved via Vite alias to our-company-web-components) -->
 		<script type="module" src="components/header/header.js"></script>
 		<script type="module" src="components/hero/hero.js"></script>
 		<script type="module" src="components/band/band.js"></script>

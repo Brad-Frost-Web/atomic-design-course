@@ -231,10 +231,7 @@ const getStyleDictionaryConfig = (theme) => {
 	 * Define the config for what platforms and formats the tokens should build in
 	 */
 	const config = {
-		source: [
-			`design-tokens/core/**/*.json`,
-			`design-tokens/${theme}/**/*.json`,
-		],
+		source: [`./core/**/*.json`, `./${theme}/**/*.json`],
 		log: {
 			// Set the log level to show errors, warnings, and info messages
 			verbosity: "verbose",
@@ -243,7 +240,7 @@ const getStyleDictionaryConfig = (theme) => {
 			css: {
 				transformGroup: "custom/css",
 				prefix: "oc",
-				buildPath: "design-tokens",
+				buildPath: "./",
 				filter: (token) =>
 					token.attributes?.category === "theme" ||
 					token.attributes?.category === "spacing",
