@@ -215,7 +215,7 @@
   --oc-theme-typography-meta-sm-text-transform: uppercase;
   --oc-theme-box-shadow-sm: 0rem 0.25rem 0.25rem 0rem #00000040;
   --oc-theme-box-shadow-md: 0rem 0.5rem 0.375rem -0.375rem #0000001a;
-  --oc-theme-button-color-background-default: #0b2750;
+  --oc-theme-button-color-background-default: #1d293d;
   --oc-theme-button-color-background-hover: #0e3c81;
   --oc-theme-button-color-background-active: #0e3c81;
   --oc-theme-button-color-background-disabled: #D0D2D5;
@@ -223,11 +223,11 @@
   --oc-theme-button-color-content-hover: #ffffff;
   --oc-theme-button-color-content-active: #ffffff;
   --oc-theme-button-color-content-disabled: #ffffff;
-  --oc-theme-button-color-border-default: #0b2750;
+  --oc-theme-button-color-border-default: #1d293d;
   --oc-theme-button-color-border-hover: #0e3c81;
   --oc-theme-button-color-border-active: #0e3c81;
   --oc-theme-button-color-border-disabled: #D0D2D5;
-  --oc-theme-button-primary-color-background-default: #0b2750;
+  --oc-theme-button-primary-color-background-default: #1d293d;
   --oc-theme-button-primary-color-background-hover: #0e3c81;
   --oc-theme-button-primary-color-background-active: #0e3c81;
   --oc-theme-button-primary-color-background-disabled: #D0D2D5;
@@ -235,7 +235,7 @@
   --oc-theme-button-primary-color-content-hover: #ffffff;
   --oc-theme-button-primary-color-content-active: #ffffff;
   --oc-theme-button-primary-color-content-disabled: #ffffff;
-  --oc-theme-button-primary-color-border-default: #0b2750;
+  --oc-theme-button-primary-color-border-default: #1d293d;
   --oc-theme-button-primary-color-border-hover: #0e3c81;
   --oc-theme-button-primary-color-border-active: #0e3c81;
   --oc-theme-button-primary-color-border-disabled: #D0D2D5;
@@ -249,7 +249,7 @@
   --oc-theme-form-color-border-focus: #000000;
   --oc-theme-form-color-border-hover: #000000;
   --oc-theme-form-color-border-active: #000000;
-  --oc-theme-link-color-content-default: #0b2750;
+  --oc-theme-link-color-content-default: #1d293d;
   --oc-theme-link-color-content-hover: #0e3c81;
   --oc-theme-link-color-content-active: #0e3c81;
   --oc-theme-link-color-content-visited: #0c64e9;
