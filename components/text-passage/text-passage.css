@@ -10,10 +10,6 @@
 	box-sizing: border-box;
 }
 .text-passage {
-	font-size: 16px;
-	line-height: 24px;
-	color: #4a5565;
-
 	p {
 		margin-block-end: 32px;
 	}
@@ -24,6 +20,10 @@
 }
 
 .text-passage--lg {
-	font-size: 20px;
-	line-height: 28px;
+	font-family: var(--oc-theme-typography-body-lg-font-family);
+	font-size: var(--oc-theme-typography-body-lg-font-size);
+	line-height: var(--oc-theme-typography-body-lg-line-height);
+	letter-spacing: var(--oc-theme-typography-body-lg-letter-spacing);
+	text-transform: var(--oc-theme-typography-body-lg-text-transform);
+	font-weight: var(--oc-theme-typography-body-lg-font-weight);
 }

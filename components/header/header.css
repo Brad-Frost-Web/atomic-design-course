@@ -13,7 +13,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 24px;
+	padding: var(--oc-spacing-24);
 	background-color: var(--oc-theme-color-background-knockout);
 }
 
@@ -26,7 +26,7 @@
 
 .primary-nav__list {
 	display: flex;
-	gap: var(--oc-theme-spacing-24);
+	gap: var(--oc-spacing-24);
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -39,9 +39,10 @@
 	font-weight: var(--oc-theme-typography-body-default-font-weight);
 	letter-spacing: var(--oc-theme-typography-body-default-letter-spacing);
 	text-transform: var(--oc-theme-typography-body-default-text-transform);
-	color: var(--oc-theme-color-content-default);
+	color: var(--oc-theme-color-content-knockout);
 	text-decoration: none;
-	transition: opacity 0.2s ease;
+	transition: opacity var(--oc-theme-animation-fade-quick)
+		var(--oc-theme-animation-ease);
 }
 
 .primary-nav__link:hover {

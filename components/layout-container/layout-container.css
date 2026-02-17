@@ -14,7 +14,7 @@
 
 .layout-container {
 	margin: 0 auto;
-	padding: 0 24px;
+	padding: 0 var(--oc-spacing-24);
 	max-width: 1143px;
 }
 

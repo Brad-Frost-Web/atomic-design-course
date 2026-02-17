@@ -13,50 +13,41 @@
 .text-field {
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
+	gap: var(--oc-spacing-8);
 }
 
 .text-field__label {
-	font-family: "Inter", sans-serif;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 24px;
-	color: #0a0a0a;
+	font-family: var(--oc-theme-typography-label-default-font-family);
+	font-size: var(--oc-theme-typography-label-default-font-size);
+	line-height: var(--oc-theme-typography-label-default-line-height);
+	letter-spacing: var(--oc-theme-typography-label-default-letter-spacing);
+	text-transform: var(--oc-theme-typography-label-default-text-transform);
+	font-weight: var(--oc-theme-typography-label-default-font-weight);
+	color: var(--oc-theme-color-content-default);
 }
 
 .text-field__input {
-	padding: 12px 16px;
-	font-family: "Inter", sans-serif;
-	font-size: 16px;
-	color: #0a0a0a;
-	border: 1px solid #585d65;
-	background-color: #fff;
-	border-radius: 4px;
+	padding: var(--oc-spacing-12) var(--oc-spacing-16);
+	font-family: var(--oc-theme-typography-body-default-font-family);
+	font-size: var(--oc-theme-typography-body-default-font-size);
+	line-height: var(--oc-theme-typography-body-default-line-height);
+	letter-spacing: var(--oc-theme-typography-body-default-letter-spacing);
+	text-transform: var(--oc-theme-typography-body-default-text-transform);
+	font-weight: var(--oc-theme-typography-body-default-font-weight);
+	color: var(--oc-theme-color-content-default);
+	border: var(--oc-theme-border-width-sm) solid
+		var(--oc-theme-color-border-default);
+	background-color: var(--oc-theme-color-background-default);
+	border-radius: var(--oc-theme-border-radius-sm);
 	outline: none;
-	transition: border-color 0.2s ease;
+	transition: border-color var(--oc-theme-animation-fade-quick)
+		var(--oc-theme-animation-ease);
 }
 
 .text-field__input:focus {
-	border-color: #2b7fff;
+	border-color: var(--oc-theme-focus-ring-color-border-default);
 }
 
 .text-field__input::placeholder {
-	color: rgba(10, 10, 10, 0.5);
-}
-
-.text-field__textarea {
-	height: 162px;
-	padding: 8px 12px;
-	font-family: "Inter", sans-serif;
-	font-size: 16px;
-	color: #0a0a0a;
-	border: 1px solid #585d65;
-	border-radius: 4px;
-	outline: none;
-	resize: vertical;
-	transition: border-color 0.2s ease;
-}
-
-.text-field__textarea:focus {
-	border-color: #2b7fff;
+	color: var(--oc-theme-color-content-subtle);
 }

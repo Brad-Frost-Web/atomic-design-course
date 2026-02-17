@@ -11,23 +11,32 @@
 }
 
 .heading {
-	font-family: "Space Grotesk", sans-serif;
-	font-weight: 500;
-	color: #0a0a0a;
 	margin: 0;
 }
 
 .heading--title-lg {
-	font-size: 36px;
-	line-height: auto;
+	font-family: var(--oc-theme-typography-title-lg-font-family);
+	font-size: var(--oc-theme-typography-title-lg-font-size);
+	font-weight: var(--oc-theme-typography-title-lg-font-weight);
+	line-height: var(--oc-theme-typography-title-lg-line-height);
+	letter-spacing: var(--oc-theme-typography-title-lg-letter-spacing);
+	text-transform: var(--oc-theme-typography-title-lg-text-transform);
 }
 
 .heading--title {
-	font-size: 24px;
-	line-height: auto;
+	font-family: var(--oc-theme-typography-title-default-font-family);
+	font-size: var(--oc-theme-typography-title-default-font-size);
+	font-weight: var(--oc-theme-typography-title-default-font-weight);
+	line-height: var(--oc-theme-typography-title-default-line-height);
+	letter-spacing: var(--oc-theme-typography-title-default-letter-spacing);
+	text-transform: var(--oc-theme-typography-title-default-text-transform);
 }
 
 .heading--title-sm {
-	font-size: 18px;
-	line-height: auto;
+	font-family: var(--oc-theme-typography-title-sm-font-family);
+	font-size: var(--oc-theme-typography-title-sm-font-size);
+	font-weight: var(--oc-theme-typography-title-sm-font-weight);
+	line-height: var(--oc-theme-typography-title-sm-line-height);
+	letter-spacing: var(--oc-theme-typography-title-sm-letter-spacing);
+	text-transform: var(--oc-theme-typography-title-sm-text-transform);
 }

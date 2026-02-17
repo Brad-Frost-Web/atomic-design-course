@@ -13,9 +13,11 @@
 .card {
 	display: flex;
 	flex-direction: column;
-	padding: 24px;
-	gap: 16px;
-	border: 1px solid #d1d5dc;
-	border-radius: 4px;
+	padding: var(--oc-spacing-24);
+	gap: var(--oc-spacing-16);
+	background-color: var(--oc-theme-color-background-default);
+	border: var(--oc-theme-border-width-sm) solid
+		var(--oc-theme-color-border-subtle);
+	border-radius: var(--oc-theme-border-radius-sm);
 	text-align: left;
 }

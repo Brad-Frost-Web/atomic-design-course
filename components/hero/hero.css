@@ -17,11 +17,11 @@
 }
 
 .hero__heading {
-	margin-block-end: 24px;
+	margin-block-end: var(--oc-spacing-24);
 }
 
 .hero__description {
 	display: block;
 	max-width: 672px;
-	margin: 0 auto 32px;
+	margin: 0 auto var(--oc-spacing-32);
 }

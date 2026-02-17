@@ -12,18 +12,24 @@
 
 .button {
 	display: inline-block;
-	padding: 12px 24px;
-	background-color: #1d293d;
-	color: #fff;
-	font-family: "Inter", sans-serif;
-	font-size: 16px;
-	font-weight: 500;
-	border: 1px solid #1d293d;
-	border-radius: 4px;
+	padding: var(--oc-spacing-12) var(--oc-spacing-24);
+	background-color: var(--oc-theme-button-primary-color-background-default);
+	color: var(--oc-theme-button-primary-color-content-default);
+	font-family: var(--oc-theme-typography-label-default-font-family);
+	font-size: var(--oc-theme-typography-label-default-font-size);
+	line-height: var(--oc-theme-typography-label-default-line-height);
+	letter-spacing: var(--oc-theme-typography-label-default-letter-spacing);
+	text-transform: var(--oc-theme-typography-label-default-text-transform);
+	font-weight: var(--oc-theme-typography-label-default-font-weight);
+	border: var(--oc-theme-border-width-sm) solid
+		var(--oc-theme-button-primary-color-border-default);
+	border-radius: var(--oc-theme-border-radius-sm);
 	cursor: pointer;
-	transition: background-color 0.2s ease;
+	transition: background-color var(--oc-theme-animation-fade-quick)
+		var(--oc-theme-animation-ease);
 }
 
 .button:hover {
-	background-color: #2a3a52;
+	background-color: var(--oc-theme-button-primary-color-background-hover);
+	color: var(--oc-theme-button-primary-color-content-hover);
 }

@@ -9,5 +9,5 @@
 }
 
 .page-header__description {
-	margin-block-end: 16px;
+	margin-block-end: var(--oc-spacing-16);
 }

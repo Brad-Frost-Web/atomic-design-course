@@ -13,22 +13,26 @@
 .footer {
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
-	padding: 12px 0;
-	background-color: #d7d7d7;
+	gap: var(--oc-spacing-0);
+	padding: var(--oc-spacing-12) 0;
+	background-color: var(--oc-theme-color-background-subtle);
 }
 
 .footer__copyright {
-	font-size: 16px;
-	line-height: 24px;
-	color: #4a5565;
+	font-family: var(--oc-theme-typography-body-sm-font-family);
+	font-size: var(--oc-theme-typography-body-sm-font-size);
+	line-height: var(--oc-theme-typography-body-sm-line-height);
+	font-weight: var(--oc-theme-typography-body-sm-font-weight);
+	letter-spacing: var(--oc-theme-typography-body-sm-letter-spacing);
+	text-transform: var(--oc-theme-typography-body-sm-text-transform);
+	color: var(--oc-theme-color-content-subtle);
 	margin: 0;
 	text-align: center;
 }
 
 .footer-nav__list {
 	display: flex;
-	gap: 24px;
+	gap: var(--oc-spacing-24);
 	justify-content: center;
 	list-style: none;
 	padding: 0;
@@ -37,5 +41,11 @@
 
 .footer-nav__link {
 	color: #4a5565;
+	font-family: var(--oc-theme-typography-body-default-font-family);
+	font-size: var(--oc-theme-typography-body-default-font-size);
+	line-height: var(--oc-theme-typography-body-default-line-height);
+	font-weight: var(--oc-theme-typography-body-default-font-weight);
+	letter-spacing: var(--oc-theme-typography-body-default-letter-spacing);
+	text-transform: var(--oc-theme-typography-body-default-text-transform);
 	text-decoration: none;
 }
