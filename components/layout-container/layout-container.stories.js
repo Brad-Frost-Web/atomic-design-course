@@ -26,10 +26,19 @@ export default meta;
 
 export const Default = {
 	render: (args) => {
-		const variantAttr =
-			args.variant === "narrow" ? ' variant="narrow"' : "";
+		const variantAttr = args.variant === "narrow" ? ' variant="narrow"' : "";
 		return `
 			<my-layout-container${variantAttr}>
+				<p>${args.slot}</p>
+			</my-layout-container>
+		`;
+	},
+};
+
+export const Narrow = {
+	render: (args) => {
+		return `
+			<my-layout-container variant="narrow">
 				<p>${args.slot}</p>
 			</my-layout-container>
 		`;
