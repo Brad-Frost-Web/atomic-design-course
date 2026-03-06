@@ -1,4 +1,4 @@
-import { LitElement, html } from "lit";
+import { LitElement, html } from "https://esm.sh/lit@3";
 import styles from "./header.css" with { type: "css" };
 
 class MyHeader extends LitElement {
