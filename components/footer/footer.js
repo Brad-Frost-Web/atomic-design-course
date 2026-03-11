@@ -21,11 +21,7 @@ class MyFooter extends LitElement {
 					</ul>
 				</nav>
 				<p class="footer__copyright">
-<<<<<<< Updated upstream
-					&copy; 2026 My Company. All rights reserved.
-=======
 					&copy; 2026 Our Company. All rights reserved.
->>>>>>> Stashed changes
 				</p>
 			</footer>
 		`;
