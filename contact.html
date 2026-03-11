@@ -27,30 +27,18 @@
 				}
 			}
 		</script>
-		<script type="module" src="components/header/header.js"></script>
-		<script
-			type="module"
-			src="components/layout-container/layout-container.js"
-		></script>
-		<script type="module" src="components/page-header/page-header.js"></script>
-		<script type="module" src="components/text-field/text-field.js"></script>
-		<script
-			type="module"
-			src="components/textarea-field/textarea-field.js"
-		></script>
-		<script type="module" src="components/button/button.js"></script>
-		<script type="module" src="components/footer/footer.js"></script>
+		<script type="module" src="components/index.js"></script>
 	</head>
 	<body>
 		<my-header class="u-margin-bottom-24"></my-header>
 
-		<main class="main u-margin-bottom-72">
+		<main class="main u-margin-bottom-80">
 			<my-layout-container variant="narrow">
 				<my-page-header
 					class="u-margin-bottom-32"
 					heading="Contact us"
 				></my-page-header>
-				<form class="form">
+				<my-form>
 					<my-text-field type="text" id="name" label="Name"></my-text-field>
 					<my-text-field type="email" id="email" label="Email"></my-text-field>
 					<my-textarea-field
@@ -59,7 +47,7 @@
 						label="Your Message"
 					></my-textarea-field>
 					<my-button type="submit">Submit</my-button>
-				</form>
+				</my-form>
 			</my-layout-container>
 		</main>
 

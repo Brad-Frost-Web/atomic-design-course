@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Newsletter Form
+   ========================================================================== */
+:host {
+	display: block;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.newsletter-form {
+	display: flex;
+	justify-content: center;
+	gap: var(--oc-spacing-24);
+}
+
+.newsletter-form__text-field {
+	max-width: 302px;
+	width: 100%;
+}

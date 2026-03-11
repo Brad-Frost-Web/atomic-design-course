@@ -24,6 +24,7 @@
 	border: var(--oc-theme-border-width-sm) solid
 		var(--oc-theme-button-primary-color-border-default);
 	border-radius: var(--oc-theme-border-radius-sm);
+	text-decoration: none;
 	cursor: pointer;
 	transition: background-color var(--oc-theme-animation-fade-quick)
 		var(--oc-theme-animation-ease);

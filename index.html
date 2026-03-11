@@ -28,24 +28,7 @@
 				}
 			}
 		</script>
-		<script type="module" src="components/header/header.js"></script>
-		<script type="module" src="components/hero/hero.js"></script>
-		<script type="module" src="components/features/features.js"></script>
-		<script type="module" src="components/band/band.js"></script>
-		<script
-			type="module"
-			src="components/layout-container/layout-container.js"
-		></script>
-		<script type="module" src="components/heading/heading.js"></script>
-		<script
-			type="module"
-			src="components/text-passage/text-passage.js"
-		></script>
-		<script type="module" src="components/text-field/text-field.js"></script>
-		<script type="module" src="components/button/button.js"></script>
-		<script type="module" src="components/card/card.js"></script>
-		<script type="module" src="components/grid/grid.js"></script>
-		<script type="module" src="components/footer/footer.js"></script>
+		<script type="module" src="components/index.js"></script>
 	</head>
 	<body>
 		<my-header class="u-margin-bottom-48"></my-header>
@@ -53,10 +36,7 @@
 		<main class="main">
 			<my-layout-container>
 				<my-hero class="u-margin-bottom-64"></my-hero>
-				<section class="section u-margin-bottom-18">
-					<my-heading tag-name="h2" variant="title" class="section__heading">
-						Why Choose Us
-					</my-heading>
+				<my-section heading="Why Choose Us" class="u-margin-bottom-16">
 					<my-grid variant="3up">
 						<my-card
 							heading="Feature One"
@@ -71,28 +51,18 @@
 							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt."
 						></my-card>
 					</my-grid>
-				</section>
+				</my-section>
 			</my-layout-container>
 
 			<my-band>
 				<my-layout-container>
-					<section class="section">
-						<my-heading tag-name="h2" variant="title" class="u-margin-bottom-16"
-							>Stay Updated</my-heading
-						>
+					<my-section heading="Stay Updated">
 						<my-text-passage class="u-margin-bottom-32">
 							Subscribe to our newsletter to receive the latest news and
 							updates.
 						</my-text-passage>
-						<form class="newsletter-form">
-							<my-text-field
-								type="email"
-								placeholder="Enter your email"
-								class="newsletter-form__text-field"
-							></my-text-field>
-							<my-button type="submit" class="button">Subscribe</my-button>
-						</form>
-					</section>
+						<my-newsletter-form></my-newsletter-form>
+					</my-section>
 				</my-layout-container>
 			</my-band>
 		</main>
