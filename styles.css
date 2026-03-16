@@ -1,4 +1,15 @@
 /* ==========================================================================
+   Fonts
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500&display=swap");
+
+/* ==========================================================================
+   Design Tokens
+   ========================================================================== */
+@import "design-tokens/vanilla/build/css/tokens.css";
+@import "design-tokens/our-company/build/css/tokens.css";
+
+/* ==========================================================================
    Base Styles
    → No component (global reset/base)
    ========================================================================== */
@@ -12,11 +23,13 @@
 }
 
 body {
-	font-family: "Inter", sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
-	color: #0a0a0a;
-	background-color: #fff;
+	font-family: var(--oc-theme-typography-body-default-font-family), sans-serif;
+	font-size: var(--oc-theme-typography-body-default-font-size);
+	font-weight: var(--oc-theme-typography-body-default-font-weight);
+	line-height: var(--oc-theme-typography-body-default-line-height);
+	letter-spacing: var(--oc-theme-typography-body-default-letter-spacing);
+	color: var(--oc-theme-color-content-default);
+	background-color: var(--oc-theme-color-background-default);
 }
 
 a {
@@ -28,22 +41,6 @@ ul {
 	list-style: none;
 }
 
-/* ==========================================================================
-   Image Placeholder Block
-   → No component (used in page content)
-   ========================================================================== */
-
-.image-placeholder {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 256px;
-	background-color: #d1d5dc;
-	border-radius: 4px;
-	font-size: 16px;
-	line-height: 24px;
-	color: #6a7282;
-}
 
 /* ==========================================================================
    Utility classes
