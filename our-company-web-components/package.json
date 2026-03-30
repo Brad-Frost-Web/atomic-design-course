@@ -5,7 +5,11 @@
 	"dependencies": {
 		"lit": "^3.3.2"
 	},
+	"main": "dist/our-company-web-components.js",
+	"module": "dist/our-company-web-components.js",
+	"type": "module",
 	"scripts": {
+		"build": "vite build --config vite.build.config.js",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build"
 	},

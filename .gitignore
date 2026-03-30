@@ -3,3 +3,6 @@ node_modules/.package-lock.json
 *storybook.log
 storybook-static
 .DS_Store
+_site
+dist
+consuming-app-php/public/vendor

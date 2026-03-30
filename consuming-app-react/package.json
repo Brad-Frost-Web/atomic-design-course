@@ -1,0 +1,22 @@
+{
+	"name": "@brad-frost/consuming-app-react",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"description": "React app consuming the Our Company design system",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"@brad-frost/our-company-web-components": "1.0.0",
+		"@brad-frost/our-company-design-tokens": "1.0.0"
+	},
+	"devDependencies": {
+		"vite": "^6.0.0",
+		"@vitejs/plugin-react": "^4.5.0"
+	}
+}

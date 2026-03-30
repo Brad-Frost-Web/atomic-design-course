@@ -1,0 +1,16 @@
+{
+	"name": "@brad-frost/consuming-app-eleventy",
+	"version": "1.0.0",
+	"description": "Eleventy site consuming the Our Company design system",
+	"scripts": {
+		"start": "eleventy --serve",
+		"build": "eleventy"
+	},
+	"dependencies": {
+		"@brad-frost/our-company-web-components": "1.0.0",
+		"@brad-frost/our-company-design-tokens": "1.0.0"
+	},
+	"devDependencies": {
+		"@11ty/eleventy": "^3.0.0"
+	}
+}

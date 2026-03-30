@@ -3,13 +3,21 @@
 	"version": "1.0.0",
 	"description": "We are a company",
 	"workspaces": [
+		"our-company-design-tokens",
 		"our-company-web-components",
 		"our-company-app",
-		"our-company-design-tokens"
+		"consuming-app-eleventy",
+		"consuming-app-react",
+		"consuming-app-php"
 	],
 	"scripts": {
 		"start": "cd our-company-web-components && npm run storybook",
 		"start-app": "cd our-company-app && npm start",
-		"build:tokens": "cd our-company-design-tokens && npm run build:tokens"
+		"build:tokens": "cd our-company-design-tokens && npm run build:tokens",
+		"build:components": "cd our-company-web-components && npm run build",
+		"build": "npm run build:tokens && npm run build:components",
+		"start:eleventy": "cd consuming-app-eleventy && npm start",
+		"start:react": "cd consuming-app-react && npm run dev",
+		"start:php": "cd consuming-app-php && php -S localhost:8000 -t public"
 	}
 }

@@ -1,0 +1,13 @@
+{
+	"name": "@brad-frost/consuming-app-php",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "Dead-simple vanilla PHP app using design system web components",
+	"scripts": {
+		"postinstall": "node copy-assets.js"
+	},
+	"dependencies": {
+		"@brad-frost/our-company-design-tokens": "1.0.0",
+		"@brad-frost/our-company-web-components": "1.0.0"
+	}
+}
