@@ -1,0 +1,17 @@
+/* ==========================================================================
+   Form
+   ========================================================================== */
+:host {
+	display: block;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: var(--oc-spacing-24);
+}
