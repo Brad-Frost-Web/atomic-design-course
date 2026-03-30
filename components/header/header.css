@@ -20,8 +20,20 @@
 .logo {
 	width: 40px;
 	height: 40px;
-	background-color: var(--oc-theme-color-background-brand);
+	background-color: var(--oc-theme-color-background-brand-knockout);
 	border-radius: 50%;
+}
+
+.logo-link {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
 }
 
 .primary-nav__list {

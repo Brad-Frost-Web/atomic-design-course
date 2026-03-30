@@ -31,68 +31,6 @@ ul {
 }
 
 /* ==========================================================================
-   Image Placeholder Block
-   → No component (used in page content)
-   ========================================================================== */
-
-.image-placeholder {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 256px;
-	background-color: var(--oc-theme-color-background-subtle);
-	border-radius: var(--oc-theme-border-radius-sm);
-	font-size: var(--oc-theme-typography-body-default-font-size);
-	line-height: var(--oc-theme-typography-body-default-line-height);
-	color: var(--oc-theme-color-content-subtle);
-}
-
-/* ==========================================================================
-   Section
-   → No component (layout wrapper)
-   ========================================================================== */
-
-.section {
-	text-align: center;
-}
-
-.section__heading {
-	margin-block-end: var(--oc-spacing-24);
-}
-
-/* ==========================================================================
-   Form
-   ========================================================================== */
-
-.form {
-	display: flex;
-	flex-direction: column;
-	gap: var(--oc-spacing-24);
-}
-
-.form__text-field {
-	flex: 1;
-}
-
-.form__button {
-	align-self: flex-start;
-}
-
-/* ==========================================================================
-   Newsletter Form
-   ========================================================================== */
-.newsletter-form {
-	display: flex;
-	justify-content: center;
-	gap: var(--oc-spacing-24);
-}
-
-.newsletter-form__text-field {
-	max-width: 302px;
-	width: 100%;
-}
-
-/* ==========================================================================
    Utility classes
    → No component (global utilities)
    ========================================================================== */
