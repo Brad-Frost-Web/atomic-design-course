@@ -1,7 +1,11 @@
 {
-  "name": "@brad-frost/our-company-app",
+  "name": "@brad-frost-web/atomic-design-course-demo-app",
   "version": "1.0.0",
-  "description": "We are a company",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Demo application for the Atomic Design Certification Course",
   "type": "module",
   "dependencies": {
     "@brad-frost/our-company-design-tokens": "1.0.0",

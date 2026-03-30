@@ -1,12 +1,31 @@
 {
-	"name": "@brad-frost/our-company-design-tokens",
+	"name": "@brad-frost-web/atomic-design-course-demo-design-tokens",
 	"version": "1.0.0",
-	"description": "We are a company",
-	"dependencies": {
-		"lit": "^3.3.2"
+	"private": false,
+	"publishConfig": {
+		"access": "public"
 	},
+	"description": "Demo design tokens for the Atomic Design Certification Course",
+	"exports": {
+		"./vanilla/css/tokens.css": "./vanilla/build/css/tokens.css",
+		"./vanilla/css/vanilla.css": "./vanilla/build/css/vanilla.css",
+		"./our-company/css/tokens.css": "./our-company/build/css/tokens.css",
+		"./our-company/css/our-company.css": "./our-company/build/css/our-company.css",
+		"./our-company/css/fonts.css": "./our-company/css/fonts.css",
+		"./wowee-zowee/css/tokens.css": "./wowee-zowee/build/css/tokens.css",
+		"./wowee-zowee/css/wowee-zowee.css": "./wowee-zowee/build/css/wowee-zowee.css",
+		"./wowee-zowee/css/fonts.css": "./wowee-zowee/css/fonts.css"
+	},
+	"files": [
+		"vanilla/build",
+		"our-company/build",
+		"our-company/css",
+		"wowee-zowee/build",
+		"wowee-zowee/css"
+	],
 	"scripts": {
-		"build:tokens": "node ./config.js --verbose"
+		"build:tokens": "node ./config.js --verbose",
+		"prepublishOnly": "npm run build:tokens"
 	},
 	"devDependencies": {
 		"minimist": "^1.2.8",
