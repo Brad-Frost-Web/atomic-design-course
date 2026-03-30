@@ -5,7 +5,7 @@ import "../../../components/text-field/text-field.js";
 import "../../../components/textarea-field/textarea-field.js";
 import "../../../components/button/button.js";
 import "../../../components/footer/footer.js";
-import "@brad-frost/our-company-app/styles.css";
+import "@brad-frost-web/atomic-design-course-demo-app/styles.css";
 
 const meta = {
 	title: "Pages/Contact",

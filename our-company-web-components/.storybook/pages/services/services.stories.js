@@ -5,7 +5,7 @@ import "../../../components/card/card.js";
 import "../../../components/grid/grid.js";
 import "../../../components/button/button.js";
 import "../../../components/footer/footer.js";
-import "@brad-frost/our-company-app/styles.css";
+import "@brad-frost-web/atomic-design-course-demo-app/styles.css";
 
 const meta = {
 	title: "Pages/Services",
