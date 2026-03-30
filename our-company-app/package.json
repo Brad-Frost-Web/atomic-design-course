@@ -9,8 +9,7 @@
   "type": "module",
   "dependencies": {
     "@brad-frost-web/atomic-design-course-demo-design-tokens": "1.0.0",
-    "@brad-frost-web/atomic-design-course-demo-web-components": "1.0.0",
-    "lit": "^3.3.2"
+    "@brad-frost-web/atomic-design-course-demo-web-components": "1.0.0"
   },
   "devDependencies": {
     "vite": "^6.0.0"

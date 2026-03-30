@@ -19,29 +19,8 @@
 		/>
 		<!-- Styles -->
 		<link rel="stylesheet" href="styles.css" />
-		<!-- Component Imports (resolved via Vite alias to our-company-web-components) -->
-		<script type="module" src="components/header/header.js"></script>
-		<script type="module" src="components/hero/hero.js"></script>
-		<script type="module" src="components/band/band.js"></script>
-		<script
-			type="module"
-			src="components/layout-container/layout-container.js"
-		></script>
-		<script type="module" src="components/heading/heading.js"></script>
-		<script
-			type="module"
-			src="components/text-passage/text-passage.js"
-		></script>
-		<script type="module" src="components/text-field/text-field.js"></script>
-		<script type="module" src="components/button/button.js"></script>
-		<script type="module" src="components/card/card.js"></script>
-		<script type="module" src="components/grid/grid.js"></script>
-		<script type="module" src="components/section/section.js"></script>
-		<script
-			type="module"
-			src="components/newsletter-form/newsletter-form.js"
-		></script>
-		<script type="module" src="components/footer/footer.js"></script>
+		<!-- Web Components Bundle -->
+		<script type="module">import "@brad-frost-web/atomic-design-course-demo-web-components";</script>
 	</head>
 	<body>
 		<my-header class="u-margin-bottom-48"></my-header>

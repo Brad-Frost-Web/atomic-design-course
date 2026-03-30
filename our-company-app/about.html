@@ -19,27 +19,8 @@
 		/>
 		<!-- Styles -->
 		<link rel="stylesheet" href="styles.css" />
-		<!-- Component Imports -->
-		<script type="importmap">
-			{
-				"imports": {
-					"lit": "https://esm.sh/lit@3",
-					"lit/": "https://esm.sh/lit@3/"
-				}
-			}
-		</script>
-		<script type="module" src="components/header/header.js"></script>
-		<script
-			type="module"
-			src="components/layout-container/layout-container.js"
-		></script>
-		<script type="module" src="components/page-header/page-header.js"></script>
-		<script
-			type="module"
-			src="components/text-passage/text-passage.js"
-		></script>
-		<script type="module" src="components/button/button.js"></script>
-		<script type="module" src="components/footer/footer.js"></script>
+		<!-- Web Components Bundle -->
+		<script type="module">import "@brad-frost-web/atomic-design-course-demo-web-components";</script>
 	</head>
 	<body>
 		<my-header class="u-margin-bottom-24"></my-header>

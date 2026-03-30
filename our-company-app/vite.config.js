@@ -1,7 +1,6 @@
 import path from "node:path";
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
-import { createRequire } from "node:module";
 import { defineConfig } from "vite";
 
 const dirname =
@@ -9,16 +8,23 @@ const dirname =
     ? __dirname
     : path.dirname(fileURLToPath(import.meta.url));
 
-const require = createRequire(import.meta.url);
+/**
+ * Walk up from the app directory looking for a package in node_modules.
+ * Works with hoisted workspace deps and standard installs.
+ */
+function findPackageDir(name) {
+  const parts = name.split("/");
+  let dir = dirname;
+  while (dir !== path.dirname(dir)) {
+    const candidate = path.join(dir, "node_modules", ...parts);
+    if (fs.existsSync(candidate)) return candidate;
+    dir = path.dirname(dir);
+  }
+  throw new Error(`Cannot find package: ${name}`);
+}
 
-const designTokensRoot = path.dirname(
-  require.resolve("@brad-frost-web/atomic-design-course-demo-design-tokens/package.json")
-);
-const componentsRoot = path.join(
-  path.dirname(
-    require.resolve("@brad-frost-web/atomic-design-course-demo-web-components/package.json")
-  ),
-  "components"
+const designTokensRoot = findPackageDir(
+  "@brad-frost-web/atomic-design-course-demo-design-tokens"
 );
 
 export default defineConfig({
@@ -28,28 +34,7 @@ export default defineConfig({
     open: true,
     fs: { allow: [".."] },
   },
-  resolve: {
-    alias: {
-      components: componentsRoot,
-    },
-  },
   plugins: [
-    // Resolve /components/* and components/* URLs to the web-components package
-    // (alias alone only affects JS imports; browser requests need resolveId)
-    {
-      name: "components-resolve",
-      resolveId(id) {
-        const normalized = id.startsWith("/") ? id.slice(1) : id;
-        if (!normalized.startsWith("components/")) return null;
-        const resolved = path.join(
-          path.dirname(
-            require.resolve("@brad-frost-web/atomic-design-course-demo-web-components/package.json")
-          ),
-          normalized
-        );
-        return resolved;
-      },
-    },
     // Serve design-tokens at /design-tokens so HTML link hrefs work on all pages
     {
       name: "design-tokens",
