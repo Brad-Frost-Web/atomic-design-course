@@ -5,4 +5,4 @@ storybook-static
 .DS_Store
 _site
 dist
-consuming-app-php/public/vendor
+our-company-app-php/public/vendor

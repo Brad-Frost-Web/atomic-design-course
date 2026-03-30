@@ -1,5 +1,5 @@
 {
-	"name": "@brad-frost/consuming-app-eleventy",
+	"name": "@brad-frost-web/atomic-design-course-demo-app-eleventy",
 	"version": "1.0.0",
 	"description": "Eleventy site consuming the Our Company design system",
 	"scripts": {

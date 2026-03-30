@@ -10,9 +10,9 @@
 		"our-company-design-tokens",
 		"our-company-web-components",
 		"our-company-app",
-		"consuming-app-eleventy",
-		"consuming-app-react",
-		"consuming-app-php"
+		"our-company-app-eleventy",
+		"our-company-app-react",
+		"our-company-app-php"
 	],
 	"scripts": {
 		"start": "npm run storybook --workspace=our-company-web-components",
@@ -26,8 +26,8 @@
 		"publish": "npm run publish:tokens && npm run publish:components",
 		"publish:components": "npm publish --workspace=our-company-web-components",
 		"publish:tokens": "npm publish --workspace=our-company-design-tokens",
-		"start:eleventy": "cd consuming-app-eleventy && npm start",
-		"start:react": "cd consuming-app-react && npm run dev",
-		"start:php": "cd consuming-app-php && php -S localhost:8000 -t public"
+		"start:eleventy": "cd our-company-app-eleventy && npm start",
+		"start:react": "cd our-company-app-react && npm run dev",
+		"start:php": "cd our-company-app-php && php -S localhost:8000 -t public"
 	}
 }

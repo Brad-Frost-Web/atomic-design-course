@@ -12,9 +12,9 @@ This demo builds on the Level 6 monorepo architecture by adding three **consumin
 
 ### The Consuming Apps
 
-- **`consuming-app-eleventy`** — An [Eleventy](https://www.11ty.dev/) static site that uses passthrough copy to include the pre-built component bundle and token CSS. Demonstrates: web components in a static site generator.
-- **`consuming-app-react`** — A [React](https://react.dev/) app using Vite that imports the web components from source. Demonstrates: web components in a modern JS framework with a bundler.
-- **`consuming-app-php`** — A vanilla PHP app with zero build tools. Copies the pre-built assets to a `public/vendor/` directory. Demonstrates: web components work everywhere, including legacy and server-rendered environments.
+- **`our-company-app-eleventy`** — An [Eleventy](https://www.11ty.dev/) static site that uses passthrough copy to include the pre-built component bundle and token CSS. Demonstrates: web components in a static site generator.
+- **`our-company-app-react`** — A [React](https://react.dev/) app using Vite that imports the web components from source. Demonstrates: web components in a modern JS framework with a bundler.
+- **`our-company-app-php`** — A vanilla PHP app with zero build tools. Copies the pre-built assets to a `public/vendor/` directory. Demonstrates: web components work everywhere, including legacy and server-rendered environments.
 
 ### Key Changes from Level 6
 

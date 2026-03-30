@@ -1,4 +1,4 @@
-# consuming-app-php
+# our-company-app-php
 
 A dead-simple vanilla PHP app that demonstrates web components work everywhere.
 

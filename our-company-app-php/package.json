@@ -1,5 +1,5 @@
 {
-	"name": "@brad-frost/consuming-app-php",
+	"name": "@brad-frost-web/atomic-design-course-demo-app-php",
 	"version": "1.0.0",
 	"type": "module",
 	"description": "Dead-simple vanilla PHP app using design system web components",
