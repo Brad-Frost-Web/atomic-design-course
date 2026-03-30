@@ -1,15 +1,27 @@
 {
-	"name": "@brad-frost/our-company-web-components",
+	"name": "@brad-frost-web/atomic-design-course-demo-web-components",
 	"version": "1.0.0",
-	"description": "We are a company",
-	"dependencies": {
-		"lit": "^3.3.2"
+	"private": false,
+	"publishConfig": {
+		"access": "public"
 	},
+	"description": "Demo component library for the Atomic Design Certification Course",
+	"type": "module",
+	"main": "./dist/index.js",
+	"exports": {
+		".": "./dist/index.js"
+	},
+	"files": [
+		"dist"
+	],
 	"scripts": {
+		"build": "vite build",
+		"prepublishOnly": "npm run build",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build"
 	},
 	"devDependencies": {
+		"lit": "^3.3.2",
 		"@chromatic-com/storybook": "^5.0.1",
 		"@storybook/addon-a11y": "^10.2.9",
 		"@storybook/addon-docs": "^10.2.9",

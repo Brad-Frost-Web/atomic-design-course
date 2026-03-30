@@ -1,15 +1,27 @@
 {
-	"name": "@brad-frost/our-company",
+	"name": "@brad-frost-web/atomic-design-course-demo",
 	"version": "1.0.0",
-	"description": "We are a company",
+	"private": false,
+	"publishConfig": {
+		"access": "public"
+	},
+	"description": "Demo codebase for the Atomic Design Certification Course",
 	"workspaces": [
 		"our-company-web-components",
 		"our-company-app",
 		"our-company-design-tokens"
 	],
 	"scripts": {
-		"start": "cd our-company-web-components && npm run storybook",
-		"start-app": "cd our-company-app && npm start",
-		"build:tokens": "cd our-company-design-tokens && npm run build:tokens"
+		"start": "npm run storybook --workspace=our-company-web-components",
+		"start-app": "npm run start --workspace=our-company-app",
+		"preview-app": "npm run preview --workspace=our-company-app",
+		"build": "npm run build:libraries && npm run build-storybook",
+		"build:libraries": "npm run build:tokens && npm run build:components",
+		"build:tokens": "npm run build:tokens --workspace=our-company-design-tokens",
+		"build:components": "npm run build --workspace=our-company-web-components",
+		"build-storybook": "npm run build-storybook --workspace=our-company-web-components",
+		"publish": "npm run publish:tokens && npm run publish:components",
+		"publish:components": "npm publish --workspace=our-company-web-components",
+		"publish:tokens": "npm publish --workspace=our-company-design-tokens"
 	}
 }
