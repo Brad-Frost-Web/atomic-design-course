@@ -10,6 +10,13 @@
 	box-sizing: border-box;
 }
 .text-passage {
+	font-family: var(--oc-theme-typography-body-default-font-family), sans-serif;
+	font-size: var(--oc-theme-typography-body-default-font-size);
+	font-weight: var(--oc-theme-typography-body-default-font-weight);
+	line-height: var(--oc-theme-typography-body-default-line-height);
+	letter-spacing: var(--oc-theme-typography-body-default-letter-spacing);
+	color: var(--oc-theme-color-content-default);
+
 	p {
 		margin-block-end: 32px;
 	}

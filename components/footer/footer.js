@@ -23,7 +23,7 @@ class MyFooter extends LitElement {
 					</ul>
 				</nav>
 				<p class="footer__copyright">
-					&copy; 2026 My Company. All rights reserved.
+					&copy; 2026 Our Company. All rights reserved.
 				</p>
 			</footer>
 		`;
