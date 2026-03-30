@@ -3,34 +3,15 @@ layout: base.njk
 title: Home — Our Company
 ---
 
-<my-header class="u-margin-bottom-48"></my-header>
+<my-header></my-header>
 
 <main class="main">
-	<my-layout-container>
-		<my-hero class="u-margin-bottom-64"></my-hero>
-		<my-section heading="Why Choose Us" class="u-margin-bottom-16">
-			<my-grid variant="3up">
-				<my-card
-					heading="Feature One"
-					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt."
-				></my-card>
-				<my-card
-					heading="Feature Two"
-					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt."
-				></my-card>
-				<my-card
-					heading="Feature Three"
-					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt."
-				></my-card>
-			</my-grid>
-		</my-section>
-	</my-layout-container>
 
-	<my-band>
+	<my-band style="display: block;min-height: 100vh; background-color: var(--oc-theme-color-background-brand); display: flex; flex-direction: column; justify-content: center; align-items: center;">
 		<my-layout-container>
-			<my-section heading="Stay Updated">
+			<my-section heading="Welcome to our brand-new Eleventy site!">
 				<my-text-passage class="u-margin-bottom-32">
-					Subscribe to our newsletter to receive the latest news and updates.
+					<p>Subscribe to our newsletter to receive the latest news and updates.</p>
 				</my-text-passage>
 				<my-newsletter-form></my-newsletter-form>
 			</my-section>

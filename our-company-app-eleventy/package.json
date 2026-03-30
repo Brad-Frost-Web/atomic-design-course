@@ -7,8 +7,8 @@
 		"build": "eleventy"
 	},
 	"dependencies": {
-		"@brad-frost/our-company-web-components": "1.0.0",
-		"@brad-frost/our-company-design-tokens": "1.0.0"
+		"@brad-frost-web/atomic-design-course-demo-web-components": "1.0.0",
+		"@brad-frost-web/atomic-design-course-demo-design-tokens": "1.0.0"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^3.0.0"

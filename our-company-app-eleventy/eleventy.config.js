@@ -1,16 +1,32 @@
+import { createRequire } from "node:module";
+
+const require = createRequire(import.meta.url);
+
+// Resolve actual file paths — handles npm workspace hoisting where
+// packages live in the root node_modules, not the app's own.
+const fontsCSS = require.resolve(
+	"@brad-frost-web/atomic-design-course-demo-design-tokens/our-company/css/fonts.css"
+);
+const tokensCSS = require.resolve(
+	"@brad-frost-web/atomic-design-course-demo-design-tokens/our-company/css/tokens.css"
+);
+const componentsBundle = require.resolve(
+	"@brad-frost-web/atomic-design-course-demo-web-components"
+);
+
 export default function (eleventyConfig) {
-	// Passthrough copy design tokens CSS from the design system package
+	// Passthrough copy design tokens CSS
 	eleventyConfig.addPassthroughCopy({
-		"node_modules/@brad-frost/our-company-design-tokens/our-company/build/css/tokens.css":
-			"assets/tokens/tokens.css",
-		"node_modules/@brad-frost/our-company-design-tokens/our-company/css/fonts.css":
-			"assets/tokens/fonts.css",
+		[fontsCSS]: "assets/tokens/fonts.css",
+		[tokensCSS]: "assets/tokens/tokens.css",
 	});
+
+	// Passthrough copy app styles
+	eleventyConfig.addPassthroughCopy({ "src/styles.css": "styles.css" });
 
 	// Passthrough copy the pre-built web components bundle
 	eleventyConfig.addPassthroughCopy({
-		"node_modules/@brad-frost/our-company-web-components/dist/our-company-web-components.js":
-			"assets/components/our-company-web-components.js",
+		[componentsBundle]: "assets/components/our-company-web-components.js",
 	});
 
 	return {

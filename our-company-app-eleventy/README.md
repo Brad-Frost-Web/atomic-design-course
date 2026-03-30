@@ -44,8 +44,8 @@ npm run build
 
 This app depends on:
 
-- `@brad-frost/our-company-web-components` — Lit-based custom elements
-- `@brad-frost/our-company-design-tokens` — CSS tokens and fonts
+- `@brad-frost-web/atomic-design-course-demo-web-components` — Lit-based custom elements
+- `@brad-frost-web/atomic-design-course-demo-design-tokens` — CSS tokens and fonts
 
 In a real-world setup, these would be installed from npm. In this monorepo demo, they resolve via npm workspaces.
 
