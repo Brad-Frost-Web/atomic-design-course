@@ -12,11 +12,13 @@
 }
 
 body {
-	font-family: "Inter", sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
-	color: #0a0a0a;
-	background-color: #fff;
+	font-family: var(--oc-theme-typography-body-default-font-family), sans-serif;
+	font-size: var(--oc-theme-typography-body-default-font-size);
+	font-weight: var(--oc-theme-typography-body-default-font-weight);
+	line-height: var(--oc-theme-typography-body-default-line-height);
+	letter-spacing: var(--oc-theme-typography-body-default-letter-spacing);
+	color: var(--oc-theme-color-content-default);
+	background-color: var(--oc-theme-color-background-default);
 }
 
 a {
@@ -29,104 +31,54 @@ ul {
 }
 
 /* ==========================================================================
-   Image Placeholder Block
-   → No component (used in page content)
-   ========================================================================== */
-
-.image-placeholder {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 256px;
-	background-color: #d1d5dc;
-	border-radius: 4px;
-	font-size: 16px;
-	line-height: 24px;
-	color: #6a7282;
-}
-
-/* ==========================================================================
-   Section
-   → No component (layout wrapper)
-   ========================================================================== */
-
-.section {
-	text-align: center;
-}
-
-.section__heading {
-	margin-block-end: 28px;
-}
-
-/* ==========================================================================
-   Form
-   ========================================================================== */
-
-.form {
-	display: flex;
-	flex-direction: column;
-	gap: 24px;
-}
-
-.form__text-field {
-	flex: 1;
-}
-
-.form__button {
-	align-self: flex-start;
-}
-
-/* ==========================================================================
-   Newsletter Form
-   ========================================================================== */
-.newsletter-form {
-	display: flex;
-	justify-content: center;
-	gap: 24px;
-}
-
-.newsletter-form__text-field {
-	max-width: 302px;
-	width: 100%;
-}
-
-/* ==========================================================================
    Utility classes
    → No component (global utilities)
    ========================================================================== */
 
-.u-margin-bottom-72 {
-	margin-block-end: 72px;
-}
-
-.u-margin-bottom-64 {
-	margin-block-end: 64px;
-}
-
-.u-margin-bottom-48 {
-	margin-block-end: 48px;
-}
-
-.u-margin-bottom-32 {
-	margin-block-end: 32px;
-}
-
-.u-margin-bottom-28 {
-	margin-block-end: 28px;
-}
-
-.u-margin-bottom-24 {
-	margin-block-end: 24px;
-}
-
-.u-margin-bottom-18 {
-	margin-block-end: 18px;
-}
-
-.u-margin-bottom-16 {
-	margin-block-end: 16px;
+.u-margin-bottom-4 {
+	margin-block-end: var(--oc-spacing-4);
 }
 
 .u-margin-bottom-8 {
-	margin-block-end: 8px;
+	margin-block-end: var(--oc-spacing-8);
+}
+
+.u-margin-bottom-12 {
+	margin-block-end: var(--oc-spacing-12);
+}
+
+.u-margin-bottom-16 {
+	margin-block-end: var(--oc-spacing-16);
+}
+
+.u-margin-bottom-24 {
+	margin-block-end: var(--oc-spacing-24);
+}
+
+.u-margin-bottom-32 {
+	margin-block-end: var(--oc-spacing-32);
+}
+
+.u-margin-bottom-40 {
+	margin-block-end: var(--oc-spacing-40);
+}
+
+.u-margin-bottom-48 {
+	margin-block-end: var(--oc-spacing-48);
+}
+
+.u-margin-bottom-64 {
+	margin-block-end: var(--oc-spacing-64);
+}
+
+.u-margin-bottom-80 {
+	margin-block-end: var(--oc-spacing-80);
+}
+
+.u-margin-bottom-96 {
+	margin-block-end: var(--oc-spacing-96);
+}
+
+.u-margin-bottom-128 {
+	margin-block-end: var(--oc-spacing-128);
 }

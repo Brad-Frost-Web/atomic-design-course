@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Section
+   ========================================================================== */
+:host {
+	display: block;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.section {
+	text-align: center;
+}
+
+.section__heading {
+	margin-block-end: var(--oc-spacing-24);
+}

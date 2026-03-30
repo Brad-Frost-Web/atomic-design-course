@@ -40,7 +40,7 @@
 }
 
 .footer-nav__link {
-	color: #4a5565;
+	color: var(--oc-theme-color-content-subtle);
 	font-family: var(--oc-theme-typography-body-default-font-family);
 	font-size: var(--oc-theme-typography-body-default-font-size);
 	line-height: var(--oc-theme-typography-body-default-line-height);

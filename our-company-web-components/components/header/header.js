@@ -9,7 +9,9 @@ class MyHeader extends LitElement {
 	render() {
 		return html`
 			<header class="header">
-				<div class="logo"></div>
+				<div class="logo">
+					<a href="./index.html" class="logo-link">Our Company</a>
+				</div>
 				<nav class="primary-nav">
 					<ul class="primary-nav__list">
 						<li class="primary-nav__item">

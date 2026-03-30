@@ -15,3 +15,6 @@ import "./components/button/button.js";
 import "./components/text-field/text-field.js";
 import "./components/textarea-field/textarea-field.js";
 import "./components/page-header/page-header.js";
+import "./components/section/section.js";
+import "./components/form/form.js";
+import "./components/newsletter-form/newsletter-form.js";
