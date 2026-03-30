@@ -6,5 +6,8 @@
 <link rel="stylesheet" href="/vendor/design-tokens/fonts.css" />
 <link rel="stylesheet" href="/vendor/design-tokens/tokens.css" />
 
+<!-- Global Styles -->
+<link rel="stylesheet" href="/styles.css" />
+
 <!-- Pre-built Web Components Bundle -->
 <script type="module" src="/vendor/components/our-company-web-components.js"></script>

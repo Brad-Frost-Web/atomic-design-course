@@ -3,8 +3,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { createRequire } from "node:module";
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
+const require = createRequire(import.meta.url);
 
 // Directories
 const vendorDir = path.join(dirname, "public", "vendor");
@@ -18,22 +20,25 @@ const componentsDir = path.join(vendorDir, "components");
 	}
 });
 
-// Copy design token CSS files
+// Resolve actual file paths — handles npm workspace hoisting
 const tokenFiles = [
 	{
-		src: "node_modules/@brad-frost/our-company-design-tokens/our-company/build/css/tokens.css",
+		src: require.resolve(
+			"@brad-frost-web/atomic-design-course-demo-design-tokens/our-company/css/tokens.css"
+		),
 		dest: path.join(tokensDir, "tokens.css"),
 	},
 	{
-		src: "node_modules/@brad-frost/our-company-design-tokens/our-company/css/fonts.css",
+		src: require.resolve(
+			"@brad-frost-web/atomic-design-course-demo-design-tokens/our-company/css/fonts.css"
+		),
 		dest: path.join(tokensDir, "fonts.css"),
 	},
 ];
 
 tokenFiles.forEach(({ src, dest }) => {
-	const fullSrc = path.join(dirname, src);
-	if (fs.existsSync(fullSrc)) {
-		fs.copyFileSync(fullSrc, dest);
+	if (fs.existsSync(src)) {
+		fs.copyFileSync(src, dest);
 		console.log(`✓ Copied ${path.basename(src)}`);
 	} else {
 		console.warn(`⚠ Not found: ${src}`);
@@ -41,9 +46,8 @@ tokenFiles.forEach(({ src, dest }) => {
 });
 
 // Copy pre-built web components bundle
-const bundleSrc = path.join(
-	dirname,
-	"node_modules/@brad-frost/our-company-web-components/dist/our-company-web-components.js",
+const bundleSrc = require.resolve(
+	"@brad-frost-web/atomic-design-course-demo-web-components"
 );
 
 if (fs.existsSync(bundleSrc)) {
