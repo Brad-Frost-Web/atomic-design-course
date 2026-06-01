@@ -1,5 +1,5 @@
-@import "@brad-frost/our-company-design-tokens/our-company/css/fonts.css";
-@import "@brad-frost/our-company-design-tokens/wowee-zowee/css/fonts.css";
-@import "@brad-frost/our-company-design-tokens/our-company/build/css/our-company.css";
-@import "@brad-frost/our-company-design-tokens/vanilla/build/css/vanilla.css";
-@import "@brad-frost/our-company-design-tokens/wowee-zowee/build/css/wowee-zowee.css";
+@import "@brad-frost-web/atomic-design-course-demo-design-tokens/our-company/css/fonts.css";
+@import "@brad-frost-web/atomic-design-course-demo-design-tokens/wowee-zowee/css/fonts.css";
+@import "@brad-frost-web/atomic-design-course-demo-design-tokens/our-company/css/our-company.css";
+@import "@brad-frost-web/atomic-design-course-demo-design-tokens/vanilla/css/vanilla.css";
+@import "@brad-frost-web/atomic-design-course-demo-design-tokens/wowee-zowee/css/wowee-zowee.css";

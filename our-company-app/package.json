@@ -8,8 +8,8 @@
   "description": "Demo application for the Atomic Design Certification Course",
   "type": "module",
   "dependencies": {
-    "@brad-frost/our-company-design-tokens": "1.0.0",
-    "@brad-frost/our-company-web-components": "1.0.0",
+    "@brad-frost-web/atomic-design-course-demo-design-tokens": "1.0.0",
+    "@brad-frost-web/atomic-design-course-demo-web-components": "1.0.0",
     "lit": "^3.3.2"
   },
   "devDependencies": {
