@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atomic Design Certification Course — Demos</title>
+  <style>
+    :root {
+      --bg: #0f1226;
+      --panel: #1a1e3a;
+      --panel-hover: #232a52;
+      --text: #f4f5fb;
+      --muted: #b3b8d4;
+      --accent: #6c8cff;
+      --border: #2c3360;
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 5rem;
+    }
+
+    header { margin-bottom: 3rem; }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 0 0 0.75rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.1;
+      margin: 0 0 1rem;
+    }
+
+    .lede {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 60ch;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin: 3rem 0 1.25rem;
+    }
+
+    .levels {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .level {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      transition: background 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
+    }
+
+    .level:hover,
+    .level:focus-visible {
+      background: var(--panel-hover);
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    .level-top {
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .level-num {
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+      color: var(--accent);
+      font-size: 0.95rem;
+    }
+
+    .level-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .level-desc {
+      color: var(--muted);
+      margin: 0.4rem 0 0;
+      font-size: 0.98rem;
+    }
+
+    .level-arrow {
+      margin-left: auto;
+      color: var(--accent);
+      font-weight: 700;
+      align-self: center;
+    }
+
+    footer {
+      margin-top: 3.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="eyebrow">Atomic Design Certification Course</p>
+      <h1>Course Demos</h1>
+      <p class="lede">
+        Follow one project as it evolves from a handful of static HTML pages into a
+        full, documented, and consumable design system — one level at a time. Each
+        demo below is a live snapshot of the project at that stage.
+      </p>
+    </header>
+
+    <h2>The Levels</h2>
+    <ul class="levels">
+      <li>
+        <a class="level" href="https://level-1--atomic-design-course-demo.netlify.app/">
+          <div class="level-top">
+            <span class="level-num">Level 1</span>
+            <h3 class="level-title">Static Designs</h3>
+            <span class="level-arrow" aria-hidden="true">→</span>
+          </div>
+          <p class="level-desc">Plain, hand-written HTML pages and CSS. The starting point.</p>
+        </a>
+      </li>
+      <li>
+        <a class="level" href="https://level-2--atomic-design-course-demo.netlify.app/">
+          <div class="level-top">
+            <span class="level-num">Level 2</span>
+            <h3 class="level-title">Introduce Components</h3>
+            <span class="level-arrow" aria-hidden="true">→</span>
+          </div>
+          <p class="level-desc">The first reusable Web Component (a site header), built with Lit.</p>
+        </a>
+      </li>
+      <li>
+        <a class="level" href="https://level-3--atomic-design-course-demo.netlify.app/">
+          <div class="level-top">
+            <span class="level-num">Level 3</span>
+            <h3 class="level-title">Full Component Adoption</h3>
+            <span class="level-arrow" aria-hidden="true">→</span>
+          </div>
+          <p class="level-desc">The rest of the pages broken down into a proper Web Component library.</p>
+        </a>
+      </li>
+      <li>
+        <a class="level" href="https://level-4--atomic-design-course-demo.netlify.app/">
+          <div class="level-top">
+            <span class="level-num">Level 4</span>
+            <h3 class="level-title">Design Token Adoption</h3>
+            <span class="level-arrow" aria-hidden="true">→</span>
+          </div>
+          <p class="level-desc">Design tokens and theming via Style Dictionary, with multiple themes.</p>
+        </a>
+      </li>
+      <li>
+        <a class="level" href="https://level-5--atomic-design-course-demo.netlify.app/">
+          <div class="level-top">
+            <span class="level-num">Level 5</span>
+            <h3 class="level-title">Documentation</h3>
+            <span class="level-arrow" aria-hidden="true">→</span>
+          </div>
+          <p class="level-desc">A Storybook workshop for developing and documenting components.</p>
+        </a>
+      </li>
+      <li>
+        <a class="level" href="https://level-6--atomic-design-course-demo.netlify.app/">
+          <div class="level-top">
+            <span class="level-num">Level 6</span>
+            <h3 class="level-title">Architecture</h3>
+            <span class="level-arrow" aria-hidden="true">→</span>
+          </div>
+          <p class="level-desc">Tokens, components, and the app split into separate projects in an npm-workspaces monorepo.</p>
+        </a>
+      </li>
+      <li>
+        <a class="level" href="https://level-7--atomic-design-course-demo.netlify.app/">
+          <div class="level-top">
+            <span class="level-num">Level 7</span>
+            <h3 class="level-title">Consumption</h3>
+            <span class="level-arrow" aria-hidden="true">→</span>
+          </div>
+          <p class="level-desc">Three consuming apps — Eleventy, React, and PHP — using the same design system.</p>
+        </a>
+      </li>
+    </ul>
+
+    <footer>
+      Each level also lives on its own git branch. See the
+      <a href="https://github.com/Brad-Frost-Web/atomic-design-course">repository README</a>
+      for setup instructions and how to run each demo locally.
+    </footer>
+  </div>
+</body>
+</html>
