@@ -10,11 +10,16 @@
 	background-color: #1d293d;
 }
 
-.logo {
-	width: 40px;
-	height: 40px;
-	background-color: #2b7fff;
-	border-radius: 50%;
+.logo-link {
+	text-decoration: none;
+	color: #fff;
+}
+
+.logo-title {
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0;
 }
 
 .primary-nav__list {

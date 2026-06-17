@@ -193,45 +193,6 @@ ul {
 }
 
 /* ==========================================================================
-   Header Block
-   ========================================================================== */
-
-.header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 24px;
-	background-color: #1d293d;
-}
-
-.logo {
-	width: 40px;
-	height: 40px;
-	background-color: #2b7fff;
-	border-radius: 50%;
-}
-
-/* ==========================================================================
-   Nav List Block
-   ========================================================================== */
-
-.primary-nav__list {
-	display: flex;
-	gap: 24px;
-}
-
-.primary-nav__link {
-	font-size: 16px;
-	line-height: 24px;
-	color: #fff;
-	transition: opacity 0.2s ease;
-}
-
-.primary-nav__link:hover {
-	opacity: 0.8;
-}
-
-/* ==========================================================================
    Footer Block
    ========================================================================== */
 

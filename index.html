@@ -11,7 +11,14 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="styles.css" />
-
+		<script type="importmap">
+			{
+				"imports": {
+					"lit": "https://esm.sh/lit@3",
+					"lit/": "https://esm.sh/lit@3/"
+				}
+			}
+		</script>
 		<script type="module" src="components/header/header.js"></script>
 	</head>
 	<body>
@@ -63,7 +70,7 @@
 			<div class="band">
 				<div class="layout-container">
 					<section class="section">
-						<h2 class="heading heading--titl u-margin-bottom-16">
+						<h2 class="heading heading--title u-margin-bottom-16">
 							Stay Updated
 						</h2>
 						<div class="text-passage u-margin-bottom-32">
