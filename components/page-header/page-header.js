@@ -14,13 +14,13 @@ class MyPageHeader extends LitElement {
 	constructor() {
 		super();
 		this.heading = "";
-		this.description = false;
+		this.description = "";
 	}
 
 	render() {
 		return html`
 			<div class="page-header">
-				<my-heading tagName="h1" variant="title-lg">${this.heading}</my-heading>
+				<my-heading tag-name="h1" variant="title-lg">${this.heading}</my-heading>
 				${this.description
 					? html`<my-text-passage class="page-header__description"
 							>${this.description}</my-text-passage

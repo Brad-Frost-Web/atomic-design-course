@@ -11,7 +11,7 @@
 }
 .text-passage {
 	p {
-		margin-block-end: 32px;
+		margin-block-end: var(--oc-spacing-32);
 	}
 
 	:last-child {

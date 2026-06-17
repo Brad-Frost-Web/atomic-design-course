@@ -10,7 +10,7 @@ class MyHero extends LitElement {
 	render() {
 		return html`
 			<section class="hero">
-				<my-heading variant="title-lg" tagName="h1" class="hero__heading">
+				<my-heading variant="title-lg" tag-name="h1" class="hero__heading">
 					Welcome to Our Company
 				</my-heading>
 				<my-text-passage class="hero__description">

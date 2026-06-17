@@ -34,3 +34,7 @@
 	background-color: var(--oc-theme-button-primary-color-background-hover);
 	color: var(--oc-theme-button-primary-color-content-hover);
 }
+
+.button:focus {
+	outline: 1px solid var(--oc-theme-focus-ring-color-border-default);
+}
