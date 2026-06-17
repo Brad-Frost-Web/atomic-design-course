@@ -43,6 +43,23 @@ ul {
 
 
 /* ==========================================================================
+   Image Placeholder Block
+   → No component (used in page content)
+   ========================================================================== */
+
+.image-placeholder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 256px;
+	background-color: var(--oc-theme-color-background-subtle);
+	border-radius: var(--oc-theme-border-radius-sm);
+	font-size: var(--oc-theme-typography-body-default-font-size);
+	line-height: var(--oc-theme-typography-body-default-line-height);
+	color: var(--oc-theme-color-content-subtle);
+}
+
+/* ==========================================================================
    Utility classes
    → No component (global utilities)
    ========================================================================== */
