@@ -43,20 +43,3 @@
 .text-field__input::placeholder {
 	color: rgba(10, 10, 10, 0.5);
 }
-
-.text-field__textarea {
-	height: 162px;
-	padding: 8px 12px;
-	font-family: "Inter", sans-serif;
-	font-size: 16px;
-	color: #0a0a0a;
-	border: 1px solid #585d65;
-	border-radius: 4px;
-	outline: none;
-	resize: vertical;
-	transition: border-color 0.2s ease;
-}
-
-.text-field__textarea:focus {
-	border-color: #2b7fff;
-}

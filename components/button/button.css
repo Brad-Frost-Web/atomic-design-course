@@ -28,3 +28,7 @@
 .button:hover {
 	background-color: #2a3a52;
 }
+
+.button:focus {
+	outline: 1px solid #2b7fff;
+}

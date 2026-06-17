@@ -30,7 +30,7 @@
 }
 
 .textarea-field__textarea::placeholder {
-	color: #999;
+	color: rgba(10, 10, 10, 0.5);
 }
 
 .textarea-field__textarea:focus {
