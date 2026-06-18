@@ -4,6 +4,7 @@ import styles from "./button.css?inline";
 class MyButton extends LitElement {
 	static properties = {
 		type: { type: String },
+		disabled: { type: Boolean, reflect: true },
 	};
 
 	static get styles() {
@@ -13,11 +14,12 @@ class MyButton extends LitElement {
 	constructor() {
 		super();
 		this.type = "button";
+		this.disabled = false;
 	}
 
 	render() {
 		return html`
-			<button class="button" type="${this.type}">
+			<button class="button" type="${this.type}" ?disabled="${this.disabled}">
 				<slot></slot>
 			</button>
 		`;

@@ -33,3 +33,8 @@
 	background-color: var(--oc-theme-button-primary-color-background-hover);
 	color: var(--oc-theme-button-primary-color-content-hover);
 }
+
+.button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
