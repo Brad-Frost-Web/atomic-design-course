@@ -7,9 +7,9 @@
 	},
 	"description": "Demo component library for the Atomic Design Certification Course",
 	"type": "module",
-	"main": "./dist/index.js",
+	"main": "./dist/our-company-web-components.js",
 	"exports": {
-		".": "./dist/index.js"
+		".": "./dist/our-company-web-components.js"
 	},
 	"files": [
 		"dist"

@@ -10,7 +10,7 @@ export default defineConfig({
 		lib: {
 			entry: "components/index.js",
 			formats: ["es"],
-			fileName: "index",
+			fileName: "our-company-web-components",
 		},
 		outDir: "dist",
 	},
