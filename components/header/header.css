@@ -11,15 +11,14 @@
 }
 
 .logo-link {
-	text-decoration: none;
-	color: #fff;
+	display: inline-block;
 }
 
-.logo-title {
-	font-family: "Space Grotesk", sans-serif;
-	font-size: 18px;
-	font-weight: 500;
-	margin: 0;
+.logo {
+	width: 40px;
+	height: 40px;
+	background-color: #2b7fff;
+	border-radius: 50%;
 }
 
 .primary-nav__list {
