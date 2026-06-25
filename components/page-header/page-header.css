@@ -8,6 +8,8 @@
 	box-sizing: border-box;
 }
 
-.page-header__description {
-	margin-block-end: 16px;
+.page-header {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
 }

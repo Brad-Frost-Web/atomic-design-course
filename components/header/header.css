@@ -13,8 +13,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 24px;
+	padding: 16px 24px;
 	background-color: #1d293d;
+}
+
+.logo-link {
+	display: inline-block;
 }
 
 .logo {

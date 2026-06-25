@@ -13,7 +13,7 @@ class MyHero extends LitElement {
 				<my-heading variant="title-lg" tag-name="h1" class="hero__heading">
 					Welcome to Our Company
 				</my-heading>
-				<my-text-passage class="hero__description">
+				<my-text-passage variant="lg" class="hero__description">
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua.

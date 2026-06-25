@@ -12,11 +12,18 @@
 }
 
 body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	font-family: "Inter", sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
 	color: #0a0a0a;
 	background-color: #fff;
+}
+
+.main {
+	flex: 1 0 auto;
 }
 
 a {
@@ -56,6 +63,18 @@ ul {
 
 .section__heading {
 	margin-block-end: 28px;
+}
+
+/* ==========================================================================
+   Text Passage
+   ========================================================================== */
+
+my-text-passage p {
+	margin-block-end: 32px;
+}
+
+my-text-passage p:last-child {
+	margin-block-end: 0;
 }
 
 /* ==========================================================================
