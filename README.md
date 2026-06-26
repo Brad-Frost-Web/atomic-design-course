@@ -30,7 +30,7 @@ You don't need to be a git expert to follow along. Below are step-by-step instru
    git --version
    ```
 
-   If you see a version number, you're set. If not, download git from [git-scm.com/downloads](https://git-scm.com/downloads) and install it.
+   If you see a version number, you're all set. If not, download git from [git-scm.com/downloads](https://git-scm.com/downloads) and install it.
 
 2. **Download (clone) this repository.** Pick a folder where you'd like the project to live, then run:
 
@@ -38,7 +38,7 @@ You don't need to be a git expert to follow along. Below are step-by-step instru
    git clone https://github.com/Brad-Frost-Web/atomic-design-course.git
    ```
 
-3. **Move into the project folder:**
+3. **Move into the project folder in your Terminal(macOS/Linux) or Git Bash (Windows):**
 
    ```
    cd atomic-design-course
@@ -46,7 +46,7 @@ You don't need to be a git expert to follow along. Below are step-by-step instru
 
 ## Switching Between Levels (Branches)
 
-Each level is a **branch**. Think of a branch as a separate snapshot of the project. You switch to a level by "checking out" its branch.
+Each level is a **branch**. Think of a branch as a separate snapshot in the timeline of the project. You switch to a level by "checking out" its branch.
 
 1. **See all the available levels:**
 
@@ -80,51 +80,180 @@ Each level is a **branch**. Think of a branch as a separate snapshot of the proj
 
 > **Tip:** Before switching branches, make sure you don't have unsaved changes. If git won't let you switch, run `git stash` to set your changes aside, switch branches, and run `git stash pop` later to bring them back.
 
+## Need to install Node.js?
+
+Levels 3–7 use [Node.js](https://nodejs.org/) (which includes `npm`) to install dependencies and run their build and server commands. Levels 1–2 are plain HTML and don't need it. If `npm install` doesn't work, download and install the **LTS** version of Node.js from [nodejs.org](https://nodejs.org/), then try again.
+
 ## Running a Level Locally
 
-What you need to do depends on the level:
+What you need to do depends on the level. First, **make sure you're on the branch for the level you want to run.** Check which branch you're currently on with:
 
-### Levels 1–3 — open the files or start a small server
+```
+git branch --show-current
+```
 
-- **Level 1:** Open `index.html` in your web browser (double-click the file, or drag it into a browser window).
-- **Levels 2–3:** These use Web Components that are best viewed through a small local server. Install the dependencies once, then start the server:
+The branch listed will be the one that you're on. If it's not the level you want, switch to it with a different level`git checkout level-3` (see [Switching Between Levels](#switching-between-levels-branches) above).
 
-  ```
-  npm install
-  npm start
-  ```
+### Levels 1–2 — open the files
 
-  Then open the URL printed in your terminal.
+- **Level 1-2:** Open `index.html` in your web browser (double-click the file, or drag it into a browser window).
+
+### Level 3 — start a small server
+
+Level 3 breaks the pages into a full Web Component library, which is best viewed through a small local server. Run these commands one at a time:
+
+1. Download the project's code libraries into a `node_modules` folder (only needed once):
+
+   ```
+   npm install
+   ```
+
+2. Start a small local web server and serve the site:
+
+   ```
+   npm start
+   ```
+
+Then open the URL printed in your terminal.
 
 ### Level 4 — build the design tokens first
 
-```
-npm install
-npm run build:tokens
-npm start
-```
+Level 4 adds design tokens (in a JSON format), which must be compiled into CSS before the site will display correctly. Run these commands one at a time:
 
-### Levels 5–7 — Storybook and/or apps
+1. Download the project's code libraries (only needed once):
 
-These levels add Storybook and, eventually, multiple applications.
+   ```
+   npm install
+   ```
 
-```
-npm install
-npm run build:tokens   # Level 5   (use  npm run build  for Levels 6–7)
-npm start              # launches Storybook
-npm run start-app      # launches the example app
-```
+2. Compile the design tokens from JSON into CSS the components can use:
 
-Level 7 also includes three consuming apps you can start individually:
+   ```
+   npm run build:tokens
+   ```
 
-```
-npm run start:eleventy   # Eleventy static site
-npm run start:react      # React app
-npm run start:php        # PHP app (requires PHP installed)
-```
+3. Start the local web server and serve the site:
+
+   ```
+   npm start
+   ```
+
+### Level 5 — add Storybook
+
+Level 5 introduces [Storybook](https://storybook.js.org/), a workshop environment for developing and documenting components. Run the following commands to get it setup properly:
+
+1. Download the project's code libraries (only needed once):
+
+   ```
+   npm install
+   ```
+
+2. Compile the design tokens from JSON into CSS the components can use:
+
+   ```
+   npm run build:tokens
+   ```
+
+3. Launch Storybook, the component workshop and documentation site:
+
+   ```
+   npm start
+   ```
+
+### Level 6 — separate projects in a monorepo
+
+Level 6 splits the design tokens, the components, and the application into their own folders — `our-company-design-tokens`, `our-company-web-components`, and `our-company-app` — managed together as an npm-workspaces monorepo. Run these commands one at a time:
+
+1. Download the code libraries for every project in the monorepo (only needed once):
+
+   ```
+   npm install
+   ```
+
+2. Build the design tokens. This must happen before you start Storybook so the components have the CSS they depend on:
+
+   ```
+   npm run build:tokens
+   ```
+
+3. Launch Storybook, the component workshop and documentation site:
+
+   ```
+   npm start
+   ```
+
+4. In a separate terminal, launch the consuming application:
+
+   ```
+   npm run start-app
+   ```
+
+#### Building and publishing the library
+
+When you're ready to package everything up rather than just run it locally:
+
+- Prepare everything for distribution (builds the tokens, components, and Storybook together):
+
+  ```
+  npm run build
+  ```
+
+- Publish the design system packages to npm:
+
+  ```
+  npm run publish
+  ```
+
+### Level 7 — multiple consuming apps
+
+Level 7 adds three different applications that all consume the same design system. Run these commands one at a time:
+
+1. Download the code libraries for every project in the monorepo (only needed once):
+
+   ```
+   npm install
+   ```
+
+2. Build all of the projects (compiles the tokens and the component library so the apps can use them):
+
+   ```
+   npm run build
+   ```
+
+Then start whichever app you'd like to view (each runs in its own terminal):
+
+- Eleventy static site:
+
+  ```
+  npm run start:eleventy
+  ```
+
+- React app:
+
+  ```
+  npm run start:react
+  ```
+
+- PHP app (requires PHP installed):
+
+  ```
+  npm run start:php
+  ```
+
+#### Building and publishing the library
+
+When you're ready to package everything up rather than just run it locally:
+
+- Prepare everything for distribution (builds the tokens, components, and Storybook together):
+
+  ```
+  npm run build
+  ```
+
+- Publish the design system packages to npm:
+
+  ```
+  npm run publish
+  ```
 
 > Every level has its own `README.md` with directions specific to that level. Once you've checked out a branch, read its README for the exact steps.
-
-## Need to install Node.js?
-
-Levels 2 and up use [Node.js](https://nodejs.org/) (which includes `npm`). If `npm install` doesn't work, download and install the **LTS** version of Node.js from [nodejs.org](https://nodejs.org/), then try again.
