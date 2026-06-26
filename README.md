@@ -82,7 +82,7 @@ Each level is a **branch**. Think of a branch as a separate snapshot in the time
 
 ## Need to install Node.js?
 
-Levels 3–7 use [Node.js](https://nodejs.org/) (which includes `npm`) to install dependencies and run their build and server commands. Levels 1–2 are plain HTML and don't need it. If `npm install` doesn't work, download and install the **LTS** version of Node.js from [nodejs.org](https://nodejs.org/), then try again.
+Levels 2–7 use [Node.js](https://nodejs.org/) (which includes `npm`) to install dependencies and run their build and server commands. Level 1 is plain HTML and doesn't need it. If `npm install` doesn't work, download and install the **LTS** version of Node.js from [nodejs.org](https://nodejs.org/), then try again.
 
 ## Running a Level Locally
 
@@ -94,13 +94,13 @@ git branch --show-current
 
 The branch listed will be the one that you're on. If it's not the level you want, switch to it with a different level`git checkout level-3` (see [Switching Between Levels](#switching-between-levels-branches) above).
 
-### Levels 1–2 — open the files
+### Level 1 — open the files
 
-- **Level 1-2:** Open `index.html` in your web browser (double-click the file, or drag it into a browser window).
+Open `index.html` in your web browser (double-click the file, or drag it into a browser window). No installation or server needed.
 
-### Level 3 — start a small server
+### Levels 2–3 — start a small server
 
-Level 3 breaks the pages into a full Web Component library, which is best viewed through a small local server. Run these commands one at a time:
+Levels 2 and 3 build the pages out of Web Components, which load as JavaScript modules that browsers won't load directly off the file system. They're best viewed through a small local server. Run these commands one at a time:
 
 1. Download the project's code libraries into a `node_modules` folder (only needed once):
 
