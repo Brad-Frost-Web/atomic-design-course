@@ -1,5 +1,6 @@
 /** @type { import('@storybook/web-components-vite').Preview } */
 import "../.storybook/theme.css";
+import "../styles.css";
 import { withThemeByClassName } from "@storybook/addon-themes";
 
 /**

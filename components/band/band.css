@@ -11,7 +11,7 @@
 }
 
 .band {
-	padding: var(--oc-spacing-48) 0;
+	padding: var(--oc-spacing-56) 0;
 	background: var(--oc-theme-color-background-brand);
 	font-family: var(--oc-theme-typography-body-default-font-family), sans-serif;
 	font-size: var(--oc-theme-typography-body-default-font-size);

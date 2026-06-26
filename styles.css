@@ -12,6 +12,9 @@
 }
 
 body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	font-family: var(--oc-theme-typography-body-default-font-family), sans-serif;
 	font-size: var(--oc-theme-typography-body-default-font-size);
 	font-weight: var(--oc-theme-typography-body-default-font-weight);
@@ -21,6 +24,10 @@ body {
 	background-color: var(--oc-theme-color-background-default);
 }
 
+.main {
+	flex: 1 0 auto;
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -28,6 +35,18 @@ a {
 
 ul {
 	list-style: none;
+}
+
+/* ==========================================================================
+   Text Passage
+   ========================================================================== */
+
+my-text-passage p {
+	margin-block-end: var(--oc-spacing-32);
+}
+
+my-text-passage p:last-child {
+	margin-block-end: 0;
 }
 
 /* ==========================================================================
@@ -69,6 +88,10 @@ ul {
 
 .u-margin-bottom-64 {
 	margin-block-end: var(--oc-spacing-64);
+}
+
+.u-margin-bottom-72 {
+	margin-block-end: var(--oc-spacing-72);
 }
 
 .u-margin-bottom-80 {

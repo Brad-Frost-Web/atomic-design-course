@@ -24,6 +24,10 @@
 			"type": "dimension",
 			"value": "24px"
 		},
+		"28": {
+			"type": "dimension",
+			"value": "28px"
+		},
 		"32": {
 			"type": "dimension",
 			"value": "32px"
@@ -36,9 +40,17 @@
 			"type": "dimension",
 			"value": "48px"
 		},
+		"56": {
+			"type": "dimension",
+			"value": "56px"
+		},
 		"64": {
 			"type": "dimension",
 			"value": "64px"
+		},
+		"72": {
+			"type": "dimension",
+			"value": "72px"
 		},
 		"80": {
 			"type": "dimension",
