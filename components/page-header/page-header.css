@@ -8,6 +8,8 @@
 	box-sizing: border-box;
 }
 
-.page-header__description {
-	margin-block-end: var(--oc-spacing-16);
+.page-header {
+	display: flex;
+	flex-direction: column;
+	gap: var(--oc-spacing-16);
 }

@@ -11,6 +11,6 @@
 }
 
 .band {
-	padding: var(--oc-spacing-48) 0;
+	padding: var(--oc-spacing-56) 0;
 	background: var(--oc-theme-color-background-brand);
 }

@@ -15,5 +15,9 @@
 }
 
 .section__heading {
-	margin-block-end: var(--oc-spacing-24);
+	margin-block-end: var(--oc-spacing-28);
+}
+
+.section--band .section__heading {
+	margin-block-end: var(--oc-spacing-16);
 }

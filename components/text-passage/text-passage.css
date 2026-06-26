@@ -9,16 +9,6 @@
 *::after {
 	box-sizing: border-box;
 }
-.text-passage {
-	p {
-		margin-block-end: var(--oc-spacing-32);
-	}
-
-	:last-child {
-		margin-block-end: 0;
-	}
-}
-
 .text-passage--lg {
 	font-family: var(--oc-theme-typography-body-lg-font-family);
 	font-size: var(--oc-theme-typography-body-lg-font-size);

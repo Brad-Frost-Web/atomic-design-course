@@ -267,11 +267,11 @@
 			},
 			"font-size": {
 				"type": "dimension",
-				"value": "{typography.font-size.32}"
+				"value": "{typography.font-size.48}"
 			},
 			"line-height": {
 				"type": "dimension",
-				"value": "{typography.line-height.40}"
+				"value": "{typography.line-height.48}"
 			},
 			"letter-spacing": {
 				"type": "dimension",

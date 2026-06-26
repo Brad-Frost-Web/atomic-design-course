@@ -5,6 +5,7 @@ import "../heading/heading.js";
 class MySection extends LitElement {
 	static properties = {
 		heading: { type: String },
+		variant: { type: String, reflect: true },
 	};
 
 	static styles = [styles];
@@ -12,11 +13,12 @@ class MySection extends LitElement {
 	constructor() {
 		super();
 		this.heading = "";
+		this.variant = "";
 	}
 
 	render() {
 		return html`
-			<section class="section">
+			<section class="section ${this.variant ? `section--${this.variant}` : ""}">
 				${this.heading
 					? html`<my-heading tag-name="h2" variant="title" class="section__heading">${this.heading}</my-heading>`
 					: ""}
