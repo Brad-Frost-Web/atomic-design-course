@@ -1,6 +1,6 @@
 # Atomic Design Certification Course — Level 1: Static Designs
 
-This level contains a hands-on demo for the [Atomic Design Certification Course](https://atomicdesigncourse.com/). This demo shows how the Atomic Design methodology is used to take a simple set of static HTML pages and transform them into a full design system that is documented, published, and consumed by real applications. This branch is the starting point **Level 1: Static Designs.**
+This level contains a hands-on demo for the [Atomic Design Certification Course](https://atomicdesigncourse.com/). This demo shows how the Atomic Design methodology is used to take a simple set of static HTML pages and break them down to eventually transform them into a full design system. This branch is the starting point **Level 1: Static Designs.**
 
 ## The Levels
 
