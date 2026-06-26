@@ -11,11 +11,18 @@
 }
 
 body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	font-family: "Inter", sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
 	color: #0a0a0a;
 	background-color: #fff;
+}
+
+.main {
+	flex: 1 0 auto;
 }
 
 a {
@@ -164,6 +171,7 @@ ul {
 	gap: 16px;
 	border: 1px solid #d1d5dc;
 	border-radius: 4px;
+	text-align: left;
 }
 
 /* ==========================================================================
@@ -200,8 +208,12 @@ ul {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 24px;
+	padding: 16px 24px;
 	background-color: #1d293d;
+}
+
+.logo-link {
+	display: inline-block;
 }
 
 .logo {
@@ -324,10 +336,6 @@ ul {
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
-}
-
-.form__text-field {
-	flex: 1;
 }
 
 .form__button {
