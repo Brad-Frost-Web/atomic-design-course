@@ -1,6 +1,6 @@
 # Atomic Design Certification Course — Demos
 
-This repository contains the hands-on demo content for the **Atomic Design Certification Course**. It tells one continuous story: how a simple set of static HTML pages evolves, step by step, into a full design system that is documented, architected into separate packages, and consumed by real applications.
+This repository contains the hands-on demo content for the [**Atomic Design Certification Course**](https://atomicdesigncourse.com/). It tells one continuous story: how a simple set of static HTML pages evolves, step by step, into a full design system that is documented, architected into separate packages, and consumed by real applications.
 
 Each **level** lives on its own git branch and is deployed as its own live website. As you progress through the course, you can check out each branch to see — and run — the exact state of the project at that stage.
 
