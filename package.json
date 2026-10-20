@@ -1,33 +1,37 @@
 {
-	"name": "@brad-frost-web/atomic-design-course-demo",
-	"version": "1.0.0",
-	"private": false,
-	"publishConfig": {
-		"access": "public"
-	},
-	"description": "Demo codebase for the Atomic Design Certification Course",
-	"workspaces": [
-		"our-company-design-tokens",
-		"our-company-web-components",
-		"our-company-app",
-		"our-company-app-eleventy",
-		"our-company-app-react",
-		"our-company-app-php"
-	],
-	"scripts": {
-		"start": "npm run storybook --workspace=our-company-web-components",
-		"start-app": "npm run start --workspace=our-company-app",
-		"preview-app": "npm run preview --workspace=our-company-app",
-		"build": "npm run build:libraries && npm run build-storybook",
-		"build:libraries": "npm run build:tokens && npm run build:components",
-		"build:tokens": "npm run build:tokens --workspace=our-company-design-tokens",
-		"build:components": "npm run build --workspace=our-company-web-components",
-		"build-storybook": "npm run build-storybook --workspace=our-company-web-components",
-		"publish": "npm run publish:tokens && npm run publish:components",
-		"publish:components": "npm publish --workspace=our-company-web-components",
-		"publish:tokens": "npm publish --workspace=our-company-design-tokens",
-		"start:eleventy": "cd our-company-app-eleventy && npm start",
-		"start:react": "cd our-company-app-react && npm run dev",
-		"start:php": "cd our-company-app-php && php -S localhost:8000 -t public"
-	}
+  "name": "@brad-frost-web/atomic-design-course-demo",
+  "version": "1.0.0",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Demo codebase for the Atomic Design Certification Course",
+  "workspaces": [
+    "our-company-design-tokens",
+    "our-company-web-components",
+    "our-company-app",
+    "our-company-app-eleventy",
+    "our-company-app-react",
+    "our-company-app-php"
+  ],
+  "scripts": {
+    "start": "npm run storybook --workspace=our-company-web-components",
+    "start-app": "npm run start --workspace=our-company-app",
+    "preview-app": "npm run preview --workspace=our-company-app",
+    "build": "npm run build:libraries && npm run build-storybook",
+    "build:libraries": "npm run build:tokens && npm run build:components",
+    "build:tokens": "npm run build:tokens --workspace=our-company-design-tokens",
+    "build:components": "npm run build --workspace=our-company-web-components",
+    "build-storybook": "npm run build-storybook --workspace=our-company-web-components",
+    "publish": "npm run publish:tokens && npm run publish:components",
+    "publish:components": "npm publish --workspace=our-company-web-components",
+    "publish:tokens": "npm publish --workspace=our-company-design-tokens",
+    "start:eleventy": "cd our-company-app-eleventy && npm start",
+    "start:react": "cd our-company-app-react && npm run dev",
+    "start:php": "cd our-company-app-php && php -S localhost:8000 -t public",
+    "bfw:ship": "bfw-process verify-phase ship"
+  },
+  "devDependencies": {
+    "@brad-frost-web/bfw-process": "0.25.0"
+  }
 }
